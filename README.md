@@ -311,4 +311,3 @@ Developed using Flask + MySQL + Bootstrap 5 ❤️
 ⭐ Star this repository if you like this project!
 
 </div>
-```
