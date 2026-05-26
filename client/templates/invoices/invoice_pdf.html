@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Invoice {{ bill.bill_number if bill is mapping else bill[2] }} - Shop Billing System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 12px;
+            background-color: #f8f9fa;
+            color: #212529;
+            margin: 0;
+            padding: 0;
+        }
+
+        .invoice-container {
+            width: 90%;
+            max-width: 900px;
+            background: #fff;
+            margin: 30px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .invoice-header {
+            background-color: #0d6efd;
+            color: #fff;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .invoice-header h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .company-info {
+            padding: 25px 30px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .company-info h3 {
+            color: #0d6efd;
+            margin: 0 0 5px 0;
+        }
+
+        .company-info p {
+            margin: 2px 0;
+            color: #555;
+            font-size: 13px;
+        }
+
+        /* Customer + Payment Info */
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px 30px;
+            background-color: #f9fafb;
+        }
+
+        .info-card {
+            width: 48%;
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            padding: 15px 20px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .info-card strong {
+            display: block;
+            color: #0d6efd;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            margin: 3px 0;
+            font-size: 13px;
+        }
+
+        /* Table */
+        table {
+            width: 95%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #0d6efd;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        td.text-right { text-align: right; }
+        td.text-center { text-align: center; }
+
+        /* Totals */
+        tfoot td {
+            font-weight: bold;
+            background-color: #f8f9fa;
+        }
+
+        tfoot tr:last-child td {
+            background-color: #e7f1ff;
+            color: #0d6efd;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #6c757d;
+            padding: 15px 30px;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .footer strong {
+            color: #0d6efd;
+        }
+
+        /* Print button */
+        .print-button {
+            text-align: center;
+            padding: 20px;
+        }
+        .btn-print {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+        }
+        .btn-print:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .btn-print i {
+            margin-right: 8px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #667eea;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        @media print {
+            .print-button { display: none; }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="invoice-container">
+
+    <!-- Header -->
+    <div class="invoice-header">
+        <h2>Invoice: {{ bill.bill_number if bill is mapping else bill[2] }}</h2>
+        <span>Generated on: 
+            {% if bill is mapping %}
+                {{ bill.created_at.strftime('%Y-%m-%d %H:%M:%S') if bill.created_at else 'N/A' }}
+            {% else %}
+                {{ bill[15].strftime('%Y-%m-%d %H:%M:%S') if bill[15] else 'N/A' }}
+            {% endif %}
+        </span>
+    </div>
+
+    <!-- Company Info -->
+    <div class="company-info">
+        <h3>Shop Billing System</h3>
+        <p>123 College Street, Academic City, AC 12345</p>
+        <p>Phone: (555) 123-4567 | Email: shop@college.edu</p>
+    </div>
+
+    <!-- Customer + Payment -->
+    <div class="info-section">
+        <div class="info-card">
+            <strong>Bill To:</strong>
+            {% if bill is mapping %}
+                {% if bill.name %}
+                    <p><b>Name:</b> {{ bill.name }}</p>
+                    <p><b>Phone:</b> {{ bill.phone or 'N/A' }}</p>
+                    <p><b>Email:</b> {{ bill.email or 'N/A' }}</p>
+                    <p><b>Address:</b> {{ bill.address or 'N/A' }}</p>
+                {% else %}
+                    <p>Walk-in Customer</p>
+                {% endif %}
+            {% else %}
+                {% if bill[16] %}
+                    <p><b>Name:</b> {{ bill[16] }}</p>
+                    <p><b>Phone:</b> {{ bill[17] or 'N/A' }}</p>
+                    <p><b>Email:</b> {{ bill[18] or 'N/A' }}</p>
+                    <p><b>Address:</b> {{ bill[19] or 'N/A' }}</p>
+                {% else %}
+                    <p>Walk-in Customer</p>
+                {% endif %}
+            {% endif %}
+        </div>
+
+        <div class="info-card">
+            <strong>Invoice Details:</strong>
+            {% if bill is mapping %}
+                <p><b>Invoice No:</b> {{ bill.bill_number }}</p>
+                <p><b>Date:</b> {{ bill.created_at.strftime('%B %d, %Y') if bill.created_at else 'N/A' }}</p>
+                <p><b>Time:</b> {{ bill.created_at.strftime('%I:%M %p') if bill.created_at else 'N/A' }}</p>
+                <p><b>Payment:</b> {{ bill.payment_method }}</p>
+            {% else %}
+                <p><b>Invoice No:</b> {{ bill[2] }}</p>
+                <p><b>Date:</b> {{ bill[15].strftime('%B %d, %Y') if bill[15] else 'N/A' }}</p>
+                <p><b>Time:</b> {{ bill[15].strftime('%I:%M %p') if bill[15] else 'N/A' }}</p>
+                <p><b>Payment:</b> {{ bill[14] }}</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Product</th>
+                <th class="text-right">Unit Price (₹)</th>
+                <th class="text-center">Qty</th>
+                <th class="text-right">Total (₹)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                {% if item is mapping %}
+                    <td>{{ item.name or item.product_name }}</td>
+                    <td class="text-right">₹{{ "%.2f"|format(item.unit_price or item.price) }}</td>
+                    <td class="text-center">{{ item.quantity or item.qty }}</td>
+                    <td class="text-right">₹{{ "%.2f"|format(item.total_price or item.total) }}</td>
+                {% else %}
+                    <td>{{ item[6] }}</td>
+                    <td class="text-right">₹{{ "%.2f"|format(item[4]) }}</td>
+                    <td class="text-center">{{ item[3] }}</td>
+                    <td class="text-right">₹{{ "%.2f"|format(item[5]) }}</td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            {% if bill is mapping %}
+                <tr>
+                    <td colspan="4" class="text-right">Subtotal:</td>
+                    <td class="text-right">₹{{ "%.2f"|format(bill.total_amount) }}</td>
+                </tr>
+                {% if bill.discount_amount and bill.discount_amount > 0 %}
+                <tr>
+                    <td colspan="4" class="text-right">Discount:</td>
+                    <td class="text-right">-₹{{ "%.2f"|format(bill.discount_amount) }}</td>
+                </tr>
+                {% endif %}
+                {% if bill.gst_type == 'cgst_sgst' %}
+                <tr>
+                    <td colspan="4" class="text-right">CGST (9%):</td>
+                    <td class="text-right">₹{{ "%.2f"|format(bill.cgst_amount or 0) }}</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="text-right">SGST (9%):</td>
+                    <td class="text-right">₹{{ "%.2f"|format(bill.sgst_amount or 0) }}</td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="4" class="text-right">IGST (18%):</td>
+                    <td class="text-right">₹{{ "%.2f"|format(bill.igst_amount or 0) }}</td>
+                </tr>
+                {% endif %}
+                <tr>
+                    <td colspan="4" class="text-right">Grand Total:</td>
+                    <td class="text-right"><strong>₹{{ "%.2f"|format(bill.final_amount) }}</strong></td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="4" class="text-right">Subtotal:</td>
+                    <td class="text-right">₹{{ "%.2f"|format(bill[3]) }}</td>
+                </tr>
+                {% if bill[6] > 0 %}
+                <tr>
+                    <td colspan="4" class="text-right">Discount:</td>
+                    <td class="text-right">-₹{{ "%.2f"|format(bill[6]) }}</td>
+                </tr>
+                {% endif %}
+                {% if bill[8] == 'cgst_sgst' %}
+                <tr>
+                    <td colspan="4" class="text-right">CGST (9%):</td>
+                    <td class="text-right">₹{{ "%.2f"|format(bill[9]) }}</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="text-right">SGST (9%):</td>
+                    <td class="text-right">₹{{ "%.2f"|format(bill[10]) }}</td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="4" class="text-right">IGST (18%):</td>
+                    <td class="text-right">₹{{ "%.2f"|format(bill[11]) }}</td>
+                </tr>
+                {% endif %}
+                <tr>
+                    <td colspan="4" class="text-right">Grand Total:</td>
+                    <td class="text-right"><strong>₹{{ "%.2f"|format(bill[13]) }}</strong></td>
+                </tr>
+            {% endif %}
+        </tfoot>
+    </table>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p><strong>Thank you for your business!</strong></p>
+        <p>Goods once sold cannot be returned or exchanged unless defective.</p>
+        <p>This is a computer-generated invoice.</p>
+    </div>
+
+    <!-- Print and Back buttons (hidden when printing) -->
+    <div class="print-button">
+        <button onclick="window.print()" class="btn-print">
+            <i class="fas fa-print"></i> Print Invoice
+        </button>
+        <br>
+        <a href="{{ url_for('invoices.invoices') }}" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Invoices
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

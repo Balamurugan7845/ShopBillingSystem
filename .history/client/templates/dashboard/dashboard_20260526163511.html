@@ -1,0 +1,396 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Shop Billing System{% endblock %}
+{% block page_title %}Dashboard{% endblock %}
+
+{% block content %}
+<style>
+
+.dashboard-card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 4px 14px rgba(0,0,0,.08);
+}
+
+.dashboard-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.stat-icon{
+    width:65px;
+    height:65px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.5rem;
+}
+
+.card-title-small{
+    font-size:.85rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+}
+
+.chart-card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 4px 14px rgba(0,0,0,.08);
+}
+
+.chart-header{
+    padding:1rem 1.2rem;
+    font-weight:700;
+}
+
+.table-card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 4px 14px rgba(0,0,0,.08);
+}
+
+.table-responsive{
+    border-radius:12px;
+}
+
+.table thead th{
+    white-space:nowrap;
+}
+
+@media(max-width:768px){
+
+    .stat-icon{
+        width:55px;
+        height:55px;
+        font-size:1.2rem;
+    }
+
+    .dashboard-card{
+        margin-bottom:1rem;
+    }
+
+    .chart-card{
+        margin-bottom:1rem;
+    }
+
+    .table{
+        min-width:700px;
+    }
+
+}
+
+</style>
+<div class="row">
+    <!-- Stats Cards -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card dashboard-card h-100">
+            <div class="card-body p-4">
+
+    <div class="d-flex justify-content-between align-items-center">
+
+        <div>
+
+            <div class="card-title-small text-primary mb-2">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            Today's Sales
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">₹{{ "%.2f"|format(today_sales) }}</div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="stat-icon bg-success-subtle text-success">
+
+    <i class="fas fa-rupee-sign"></i>
+
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body p-4">
+
+    <div class="d-flex justify-content-between align-items-center">
+
+        <div>
+
+            <div class="card-title-small text-primary mb-2">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                            Monthly Sales
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">₹{{ "%.2f"|format(monthly_sales) }}</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-chart-line fa-3x text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-info shadow h-100 py-2">
+            <div class="card-body p-4">
+
+    <div class="d-flex justify-content-between align-items-center">
+
+        <div>
+
+            <div class="card-title-small text-primary mb-2">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                            Total Products
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">{{ total_products }}</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-box fa-3x text-warning"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-warning shadow h-100 py-2">
+            <div class="card-body p-4">
+
+    <div class="d-flex justify-content-between align-items-center">
+
+        <div>
+
+            <div class="card-title-small text-primary mb-2">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                            Total Bills
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">{{ total_bills }}</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-users fa-3x text-info"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Charts Row -->
+<div class="row mt-4">
+
+    <!-- Weekly Sales Chart -->
+    <div class="col-xl-8 col-md-12 mb-4">
+        <div class="card chart-card">
+            <div class="card-header bg-success text-white">
+                <h6 class="m-0 font-weight-bold"><i class="fas fa-chart-line"></i> Weekly Sales (Last 7 Days)</h6>
+            </div>
+            <div class="card-body p-4">
+
+    <div class="d-flex justify-content-between align-items-center">
+
+        <div>
+
+            <div class="card-title-small text-primary mb-2">
+                <canvas id="salesChart" style="max-height: 300px;"></canvas>
+                {% if sales|sum == 0 %}
+                <div class="text-center text-muted mt-3">
+                    <i class="fas fa-info-circle"></i> No sales data available for the last 7 days.
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Stock Availability Pie Chart -->
+    <div class="col-xl-4 col-md-12 mb-4">
+        <div class="card chart-card">
+            <div class="card-header bg-warning text-white">
+                <h6 class="m-0 font-weight-bold"><i class="fas fa-box"></i> Top Product Stock Availability</h6>
+            </div>
+            <div class="card-body p-4">
+
+    <div class="d-flex justify-content-between align-items-center">
+
+        <div>
+
+            <div class="card-title-small text-primary mb-2">
+                <canvas id="stockChart" style="max-height: 300px;"></canvas>
+                {% if not stock_labels %}
+                <div class="text-center text-muted mt-3">
+                    <i class="fas fa-info-circle"></i> No products available.
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Recent Bills -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card chart-card">
+            <div class="card-header bg-primary text-white">
+                <h6 class="m-0 font-weight-bold"><i class="fas fa-receipt"></i> Recent Bills</h6>
+            </div>
+            <div class="card-body p-4">
+
+    <div class="d-flex justify-content-between align-items-center">
+
+        <div>
+
+            <div class="card-title-small text-primary mb-2">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Bill Number</th>
+                                <th>Customer</th>
+                                <th>Amount</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for bill in recent_bills %}
+                            <tr>
+                                <td>{{ bill[1] }}</td>
+                                <td>{{ bill[2] or 'Walk-in Customer' }}</td>
+                                <td>₹{{ "%.2f"|format(bill[3]) }}</td>
+                                <td>{{ bill[4].strftime('%Y-%m-%d %H:%M') if bill[4] else 'N/A' }}</td>
+                                <td>
+                                    <!-- FIXED: Added invoices. blueprint prefix -->
+                                    <a href="{{ url_for('invoices.invoice_detail', bill_id=bill[0]) }}" class="btn btn-sm btn-primary rounded-pill px-3">
+                                        <i class="fas fa-eye"></i> View
+                                    </a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<!-- Load Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+// Weekly Sales Line Chart
+const salesCtx = document.getElementById('salesChart').getContext('2d');
+
+// Check if there's data to display
+const hasSalesData = {{ sales|sum }} > 0;
+
+new Chart(salesCtx, {
+    type: 'line',
+    data: {
+        labels: {{ labels|tojson }},
+        datasets: [{
+            label: "Sales (₹)",
+            data: {{ sales|tojson }},
+            borderColor: '#4361ee',
+            backgroundColor: 'rgba(67, 97, 238, 0.1)',
+            borderWidth: 3,
+            tension: 0.3,
+            fill: true,
+            pointBackgroundColor: '#4361ee',
+            pointBorderColor: '#fff',
+            pointBorderWidth: 2,
+            pointRadius: 5,
+            pointHoverRadius: 7
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: false
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        return '₹' + context.parsed.y.toFixed(2);
+                    }
+                }
+            }
+        },
+        scales: { 
+            y: { 
+                beginAtZero: true,
+                ticks: {
+                    callback: function(value) {
+                        return '₹' + value;
+                    }
+                }
+            } 
+        }
+    }
+});
+
+// Stock Availability Pie Chart
+const stockCtx = document.getElementById('stockChart').getContext('2d');
+
+// Only create chart if there's data
+{% if stock_labels %}
+new Chart(stockCtx, {
+    type: 'pie',
+    data: {
+        labels: {{ stock_labels|tojson }},
+        datasets: [{
+            data: {{ stock_values|tojson }},
+            backgroundColor: [
+                '#4361ee', '#3f37c9', '#4cc9f0', '#f72585', '#e63946',
+                '#4895ef', '#f39c12', '#27ae60', '#9c88ff', '#00b894'
+            ],
+            borderWidth: 1,
+            borderColor: '#fff'
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                position: 'bottom',
+                labels: {
+                    boxWidth: 12,
+                    padding: 15
+                }
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        const label = context.label || '';
+                        const value = context.parsed || 0;
+                        const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                        const percentage = ((value / total) * 100).toFixed(1);
+                        return `${label}: ${value} units (${percentage}%)`;
+                    }
+                }
+            }
+        }
+    }
+});
+{% endif %}
+</script>
+{% endblock %}

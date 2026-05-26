@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Profile - Shop Billing System{% endblock %}
+{% block page_title %}User Profile{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+
+    <div class="card shadow-lg p-4">
+        <div class="text-center">
+            <!-- Profile Photo -->
+            {% if user.profile_photo %}
+                <img src="{{ url_for('static', filename='uploads/' ~ user.profile_photo) }}" 
+                     alt="Profile Photo" class="rounded-circle mb-3" 
+                     style="width:120px;height:120px;object-fit:cover;border:3px solid #0d6efd;">
+            {% else %}
+                <i class="fas fa-user-circle fa-5x text-primary mb-3"></i>
+            {% endif %}
+
+            <h3>{{ user.username }}</h3>
+        </div>
+
+        <hr>
+
+        <h5 class="text-secondary">Account Details</h5>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>User ID:</strong> {{ user.id }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+
+        <hr>
+
+        <div class="text-end">
+            <a href="{{ url_for('auth.logout') }}" class="btn btn-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

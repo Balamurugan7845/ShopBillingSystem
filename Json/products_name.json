@@ -1,0 +1,5002 @@
+[
+    {
+        "name": "Shampoo 1",
+        "price": 2998.68,
+        "stock": 79
+    },
+    {
+        "name": "Oil 2",
+        "price": 1583.09,
+        "stock": 123
+    },
+    {
+        "name": "Mosquito Coil 3",
+        "price": 3664.2,
+        "stock": 132
+    },
+    {
+        "name": "Battery AAA 4",
+        "price": 1410.54,
+        "stock": 171
+    },
+    {
+        "name": "Coffee 5",
+        "price": 2992.73,
+        "stock": 22
+    },
+    {
+        "name": "Glue 6",
+        "price": 4179.87,
+        "stock": 58
+    },
+    {
+        "name": "Mouse 7",
+        "price": 2928.93,
+        "stock": 64
+    },
+    {
+        "name": "Screwdriver 8",
+        "price": 2450.94,
+        "stock": 106
+    },
+    {
+        "name": "Frying Pan 9",
+        "price": 57.97,
+        "stock": 106
+    },
+    {
+        "name": "Extension Box 10",
+        "price": 2448.91,
+        "stock": 32
+    },
+    {
+        "name": "Soap 11",
+        "price": 705.72,
+        "stock": 172
+    },
+    {
+        "name": "Oil 12",
+        "price": 2625.8,
+        "stock": 142
+    },
+    {
+        "name": "Hammer 13",
+        "price": 3760.84,
+        "stock": 103
+    },
+    {
+        "name": "Cables 14",
+        "price": 2845.16,
+        "stock": 23
+    },
+    {
+        "name": "Juice 15",
+        "price": 4747.99,
+        "stock": 110
+    },
+    {
+        "name": "Knife 16",
+        "price": 4193.58,
+        "stock": 126
+    },
+    {
+        "name": "Brush 17",
+        "price": 178.71,
+        "stock": 113
+    },
+    {
+        "name": "Broom 18",
+        "price": 2858.59,
+        "stock": 90
+    },
+    {
+        "name": "Tea Powder 19",
+        "price": 1740.43,
+        "stock": 172
+    },
+    {
+        "name": "Pencil 20",
+        "price": 246.01,
+        "stock": 127
+    },
+    {
+        "name": "Mouse 21",
+        "price": 2827.75,
+        "stock": 42
+    },
+    {
+        "name": "Body Lotion 22",
+        "price": 4791.18,
+        "stock": 140
+    },
+    {
+        "name": "Frying Pan 23",
+        "price": 2529.93,
+        "stock": 79
+    },
+    {
+        "name": "Sugar 24",
+        "price": 4281.89,
+        "stock": 9
+    },
+    {
+        "name": "Electric Kettle 25",
+        "price": 2194.51,
+        "stock": 45
+    },
+    {
+        "name": "Tape 26",
+        "price": 3289.4,
+        "stock": 173
+    },
+    {
+        "name": "Lunch Box 27",
+        "price": 2686.34,
+        "stock": 31
+    },
+    {
+        "name": "Battery AAA 28",
+        "price": 2483.82,
+        "stock": 146
+    },
+    {
+        "name": "Glue 29",
+        "price": 4077.27,
+        "stock": 184
+    },
+    {
+        "name": "Glue 30",
+        "price": 2646.63,
+        "stock": 200
+    },
+    {
+        "name": "Soap Dish 31",
+        "price": 151.22,
+        "stock": 108
+    },
+    {
+        "name": "Markers 32",
+        "price": 826.18,
+        "stock": 187
+    },
+    {
+        "name": "Charger Adapter 33",
+        "price": 3212.3,
+        "stock": 80
+    },
+    {
+        "name": "Spoon Set 34",
+        "price": 4445.91,
+        "stock": 27
+    },
+    {
+        "name": "Knife 35",
+        "price": 1997.72,
+        "stock": 19
+    },
+    {
+        "name": "Notebook 36",
+        "price": 1411.77,
+        "stock": 182
+    },
+    {
+        "name": "Lunch Box 37",
+        "price": 3492.63,
+        "stock": 82
+    },
+    {
+        "name": "Folders 38",
+        "price": 3222.97,
+        "stock": 189
+    },
+    {
+        "name": "Chips 39",
+        "price": 4560.16,
+        "stock": 181
+    },
+    {
+        "name": "LED Torch 40",
+        "price": 4837.49,
+        "stock": 14
+    },
+    {
+        "name": "Soap Dish 41",
+        "price": 3817.65,
+        "stock": 128
+    },
+    {
+        "name": "Shampoo 42",
+        "price": 1503.49,
+        "stock": 47
+    },
+    {
+        "name": "Mug 43",
+        "price": 4172.8,
+        "stock": 13
+    },
+    {
+        "name": "Coffee 44",
+        "price": 4884.49,
+        "stock": 56
+    },
+    {
+        "name": "Bucket 45",
+        "price": 810.99,
+        "stock": 32
+    },
+    {
+        "name": "Coffee 46",
+        "price": 1469.71,
+        "stock": 166
+    },
+    {
+        "name": "Mug 47",
+        "price": 3954.64,
+        "stock": 39
+    },
+    {
+        "name": "Cables 48",
+        "price": 1718.68,
+        "stock": 26
+    },
+    {
+        "name": "Napkins 49",
+        "price": 3327.59,
+        "stock": 168
+    },
+    {
+        "name": "Keyboard 50",
+        "price": 4420.69,
+        "stock": 65
+    },
+    {
+        "name": "Electric Kettle 51",
+        "price": 1193.22,
+        "stock": 46
+    },
+    {
+        "name": "Face Cream 52",
+        "price": 3220.54,
+        "stock": 178
+    },
+    {
+        "name": "Cool Drink 53",
+        "price": 4849.19,
+        "stock": 165
+    },
+    {
+        "name": "Juice 54",
+        "price": 1254.37,
+        "stock": 95
+    },
+    {
+        "name": "Extension Box 55",
+        "price": 4315.21,
+        "stock": 41
+    },
+    {
+        "name": "Cookies 56",
+        "price": 4672.38,
+        "stock": 124
+    },
+    {
+        "name": "Plate Set 57",
+        "price": 467.23,
+        "stock": 187
+    },
+    {
+        "name": "Oil 58",
+        "price": 1875.59,
+        "stock": 5
+    },
+    {
+        "name": "Cables 59",
+        "price": 3420.77,
+        "stock": 43
+    },
+    {
+        "name": "Pencil 60",
+        "price": 230.45,
+        "stock": 57
+    },
+    {
+        "name": "Oil 61",
+        "price": 3746.69,
+        "stock": 159
+    },
+    {
+        "name": "Mop 62",
+        "price": 4482.08,
+        "stock": 26
+    },
+    {
+        "name": "Mosquito Coil 63",
+        "price": 212.89,
+        "stock": 93
+    },
+    {
+        "name": "LED Bulb 64",
+        "price": 4001.38,
+        "stock": 17
+    },
+    {
+        "name": "Soap Dish 65",
+        "price": 2438.75,
+        "stock": 63
+    },
+    {
+        "name": "Oil 66",
+        "price": 4974.61,
+        "stock": 200
+    },
+    {
+        "name": "Soap Dish 67",
+        "price": 219.94,
+        "stock": 117
+    },
+    {
+        "name": "Soap Dish 68",
+        "price": 2888.67,
+        "stock": 17
+    },
+    {
+        "name": "Cookies 69",
+        "price": 1644.78,
+        "stock": 140
+    },
+    {
+        "name": "Toothbrush 70",
+        "price": 3034.15,
+        "stock": 147
+    },
+    {
+        "name": "LED Bulb 71",
+        "price": 2931.38,
+        "stock": 174
+    },
+    {
+        "name": "LED Bulb 72",
+        "price": 751.1,
+        "stock": 70
+    },
+    {
+        "name": "Coffee 73",
+        "price": 4770.28,
+        "stock": 123
+    },
+    {
+        "name": "Glue 74",
+        "price": 4665.67,
+        "stock": 50
+    },
+    {
+        "name": "Shaving Foam 75",
+        "price": 2638.3,
+        "stock": 43
+    },
+    {
+        "name": "Detergent 76",
+        "price": 3010.61,
+        "stock": 170
+    },
+    {
+        "name": "Broom 77",
+        "price": 4541.21,
+        "stock": 38
+    },
+    {
+        "name": "Toothbrush 78",
+        "price": 309.37,
+        "stock": 28
+    },
+    {
+        "name": "Frying Pan 79",
+        "price": 3398.85,
+        "stock": 138
+    },
+    {
+        "name": "Detergent 80",
+        "price": 965.12,
+        "stock": 137
+    },
+    {
+        "name": "Mouse 81",
+        "price": 4228.79,
+        "stock": 75
+    },
+    {
+        "name": "Notebook 82",
+        "price": 3120.41,
+        "stock": 40
+    },
+    {
+        "name": "LED Bulb 83",
+        "price": 1290.07,
+        "stock": 7
+    },
+    {
+        "name": "Spices 84",
+        "price": 4171.15,
+        "stock": 54
+    },
+    {
+        "name": "Face Cream 85",
+        "price": 3373.58,
+        "stock": 140
+    },
+    {
+        "name": "Oil 86",
+        "price": 1267.54,
+        "stock": 169
+    },
+    {
+        "name": "Battery AA 87",
+        "price": 2406.45,
+        "stock": 197
+    },
+    {
+        "name": "Air Freshener 88",
+        "price": 3592.51,
+        "stock": 92
+    },
+    {
+        "name": "Mouse 89",
+        "price": 1226.24,
+        "stock": 134
+    },
+    {
+        "name": "Toothpaste 90",
+        "price": 2889.97,
+        "stock": 101
+    },
+    {
+        "name": "Rice 91",
+        "price": 3489.78,
+        "stock": 119
+    },
+    {
+        "name": "Milk Powder 92",
+        "price": 2409.36,
+        "stock": 54
+    },
+    {
+        "name": "Battery AA 93",
+        "price": 914.32,
+        "stock": 143
+    },
+    {
+        "name": "Battery AA 94",
+        "price": 2342.57,
+        "stock": 47
+    },
+    {
+        "name": "Hair Oil 95",
+        "price": 2352.56,
+        "stock": 161
+    },
+    {
+        "name": "Detergent 96",
+        "price": 2073.54,
+        "stock": 118
+    },
+    {
+        "name": "LED Bulb 97",
+        "price": 2950.39,
+        "stock": 92
+    },
+    {
+        "name": "Hammer 98",
+        "price": 2140.81,
+        "stock": 193
+    },
+    {
+        "name": "Pen 99",
+        "price": 1946.68,
+        "stock": 108
+    },
+    {
+        "name": "Coffee 100",
+        "price": 3796.11,
+        "stock": 47
+    },
+    {
+        "name": "Mug 101",
+        "price": 2810.3,
+        "stock": 10
+    },
+    {
+        "name": "Shaving Foam 102",
+        "price": 3976.78,
+        "stock": 141
+    },
+    {
+        "name": "Screwdriver 103",
+        "price": 1836.05,
+        "stock": 173
+    },
+    {
+        "name": "Mouse 104",
+        "price": 305.5,
+        "stock": 94
+    },
+    {
+        "name": "Biscuits 105",
+        "price": 4470.55,
+        "stock": 41
+    },
+    {
+        "name": "Brush 106",
+        "price": 1967.75,
+        "stock": 170
+    },
+    {
+        "name": "Spices 107",
+        "price": 2426.45,
+        "stock": 179
+    },
+    {
+        "name": "Markers 108",
+        "price": 595.07,
+        "stock": 17
+    },
+    {
+        "name": "Oil 109",
+        "price": 1915.52,
+        "stock": 101
+    },
+    {
+        "name": "USB Cable 110",
+        "price": 3678.31,
+        "stock": 40
+    },
+    {
+        "name": "Knife 111",
+        "price": 3045.71,
+        "stock": 147
+    },
+    {
+        "name": "Water Bottle 112",
+        "price": 2638.45,
+        "stock": 35
+    },
+    {
+        "name": "Noodles 113",
+        "price": 3494.53,
+        "stock": 150
+    },
+    {
+        "name": "Broom 114",
+        "price": 4540.8,
+        "stock": 111
+    },
+    {
+        "name": "Tissues 115",
+        "price": 4864.99,
+        "stock": 188
+    },
+    {
+        "name": "Hair Oil 116",
+        "price": 2839.46,
+        "stock": 38
+    },
+    {
+        "name": "Glue 117",
+        "price": 3511.2,
+        "stock": 64
+    },
+    {
+        "name": "Mobile Charger 118",
+        "price": 2364.59,
+        "stock": 78
+    },
+    {
+        "name": "Battery AAA 119",
+        "price": 4317.04,
+        "stock": 135
+    },
+    {
+        "name": "Lunch Box 120",
+        "price": 1991.3,
+        "stock": 92
+    },
+    {
+        "name": "Electric Kettle 121",
+        "price": 3422.27,
+        "stock": 7
+    },
+    {
+        "name": "LED Bulb 122",
+        "price": 79.57,
+        "stock": 80
+    },
+    {
+        "name": "Coffee 123",
+        "price": 877.07,
+        "stock": 108
+    },
+    {
+        "name": "Tape 124",
+        "price": 1371.1,
+        "stock": 176
+    },
+    {
+        "name": "Rice 125",
+        "price": 4418.87,
+        "stock": 123
+    },
+    {
+        "name": "Pencil 126",
+        "price": 2230.64,
+        "stock": 85
+    },
+    {
+        "name": "Detergent 127",
+        "price": 3439.4,
+        "stock": 144
+    },
+    {
+        "name": "LED Bulb 128",
+        "price": 1226.24,
+        "stock": 45
+    },
+    {
+        "name": "Water Bottle 129",
+        "price": 2641.12,
+        "stock": 176
+    },
+    {
+        "name": "Spices 130",
+        "price": 2209.08,
+        "stock": 115
+    },
+    {
+        "name": "Mobile Charger 131",
+        "price": 641.89,
+        "stock": 145
+    },
+    {
+        "name": "Hair Oil 132",
+        "price": 3043.22,
+        "stock": 114
+    },
+    {
+        "name": "Toothbrush 133",
+        "price": 279.11,
+        "stock": 99
+    },
+    {
+        "name": "Handwash 134",
+        "price": 725.67,
+        "stock": 185
+    },
+    {
+        "name": "Spices 135",
+        "price": 3364.87,
+        "stock": 5
+    },
+    {
+        "name": "Glass Set 136",
+        "price": 1325.08,
+        "stock": 140
+    },
+    {
+        "name": "Mouse 137",
+        "price": 2205.38,
+        "stock": 140
+    },
+    {
+        "name": "Soap Dish 138",
+        "price": 3035.2,
+        "stock": 200
+    },
+    {
+        "name": "Sugar 139",
+        "price": 2320.55,
+        "stock": 20
+    },
+    {
+        "name": "Toothpaste 140",
+        "price": 3128.81,
+        "stock": 32
+    },
+    {
+        "name": "Mobile Charger 141",
+        "price": 4313.96,
+        "stock": 125
+    },
+    {
+        "name": "Soap 142",
+        "price": 2351.99,
+        "stock": 49
+    },
+    {
+        "name": "Chips 143",
+        "price": 1326.55,
+        "stock": 98
+    },
+    {
+        "name": "Mobile Charger 144",
+        "price": 3184.52,
+        "stock": 30
+    },
+    {
+        "name": "Milk Powder 145",
+        "price": 1637.68,
+        "stock": 84
+    },
+    {
+        "name": "Glass Set 146",
+        "price": 4955.35,
+        "stock": 70
+    },
+    {
+        "name": "Rice 147",
+        "price": 3887.86,
+        "stock": 85
+    },
+    {
+        "name": "Shampoo 148",
+        "price": 4186.21,
+        "stock": 128
+    },
+    {
+        "name": "Mobile Charger 149",
+        "price": 3643.75,
+        "stock": 193
+    },
+    {
+        "name": "Mug 150",
+        "price": 2902.99,
+        "stock": 36
+    },
+    {
+        "name": "Shampoo 151",
+        "price": 498.58,
+        "stock": 21
+    },
+    {
+        "name": "Folders 152",
+        "price": 1254.47,
+        "stock": 137
+    },
+    {
+        "name": "Rice 153",
+        "price": 4994.76,
+        "stock": 102
+    },
+    {
+        "name": "Battery AA 154",
+        "price": 1734.51,
+        "stock": 101
+    },
+    {
+        "name": "Bucket 155",
+        "price": 3555.93,
+        "stock": 144
+    },
+    {
+        "name": "Cookies 156",
+        "price": 1798.11,
+        "stock": 169
+    },
+    {
+        "name": "Knife 157",
+        "price": 4970.42,
+        "stock": 41
+    },
+    {
+        "name": "Markers 158",
+        "price": 372.36,
+        "stock": 44
+    },
+    {
+        "name": "Juice 159",
+        "price": 1449.22,
+        "stock": 96
+    },
+    {
+        "name": "LED Bulb 160",
+        "price": 2921.44,
+        "stock": 19
+    },
+    {
+        "name": "Battery AAA 161",
+        "price": 4053.49,
+        "stock": 51
+    },
+    {
+        "name": "Markers 162",
+        "price": 4035.82,
+        "stock": 20
+    },
+    {
+        "name": "Oil 163",
+        "price": 409.56,
+        "stock": 136
+    },
+    {
+        "name": "Shampoo 164",
+        "price": 818.68,
+        "stock": 167
+    },
+    {
+        "name": "Mug 165",
+        "price": 2220.51,
+        "stock": 89
+    },
+    {
+        "name": "Lunch Box 166",
+        "price": 4537.41,
+        "stock": 106
+    },
+    {
+        "name": "Soap Dish 167",
+        "price": 1967.65,
+        "stock": 81
+    },
+    {
+        "name": "Hammer 168",
+        "price": 220.01,
+        "stock": 83
+    },
+    {
+        "name": "Biscuits 169",
+        "price": 1040.51,
+        "stock": 10
+    },
+    {
+        "name": "LED Torch 170",
+        "price": 3963.57,
+        "stock": 40
+    },
+    {
+        "name": "Glue 171",
+        "price": 4738.44,
+        "stock": 57
+    },
+    {
+        "name": "Soap 172",
+        "price": 2056.26,
+        "stock": 138
+    },
+    {
+        "name": "Pen 173",
+        "price": 349.84,
+        "stock": 184
+    },
+    {
+        "name": "Salt 174",
+        "price": 4019.72,
+        "stock": 40
+    },
+    {
+        "name": "Coffee 175",
+        "price": 4496.18,
+        "stock": 95
+    },
+    {
+        "name": "Screwdriver 176",
+        "price": 2535.68,
+        "stock": 112
+    },
+    {
+        "name": "Tape 177",
+        "price": 2816.72,
+        "stock": 184
+    },
+    {
+        "name": "Pencil 178",
+        "price": 1687.59,
+        "stock": 23
+    },
+    {
+        "name": "Cookies 179",
+        "price": 1818.22,
+        "stock": 66
+    },
+    {
+        "name": "USB Cable 180",
+        "price": 1036.8,
+        "stock": 90
+    },
+    {
+        "name": "Rice 181",
+        "price": 1980.23,
+        "stock": 28
+    },
+    {
+        "name": "Soap 182",
+        "price": 2045.88,
+        "stock": 165
+    },
+    {
+        "name": "Shampoo 183",
+        "price": 3294.31,
+        "stock": 108
+    },
+    {
+        "name": "Cookies 184",
+        "price": 2021.12,
+        "stock": 132
+    },
+    {
+        "name": "Mobile Charger 185",
+        "price": 4397.33,
+        "stock": 69
+    },
+    {
+        "name": "Mug 186",
+        "price": 4761.14,
+        "stock": 63
+    },
+    {
+        "name": "Cookies 187",
+        "price": 3557.99,
+        "stock": 199
+    },
+    {
+        "name": "Extension Box 188",
+        "price": 4936.09,
+        "stock": 67
+    },
+    {
+        "name": "Eraser 189",
+        "price": 1952.25,
+        "stock": 97
+    },
+    {
+        "name": "Plate Set 190",
+        "price": 3281.27,
+        "stock": 119
+    },
+    {
+        "name": "USB Cable 191",
+        "price": 3118.33,
+        "stock": 29
+    },
+    {
+        "name": "Spices 192",
+        "price": 543.2,
+        "stock": 116
+    },
+    {
+        "name": "Hammer 193",
+        "price": 2802.39,
+        "stock": 36
+    },
+    {
+        "name": "Cables 194",
+        "price": 3337.4,
+        "stock": 171
+    },
+    {
+        "name": "Cool Drink 195",
+        "price": 3367.96,
+        "stock": 27
+    },
+    {
+        "name": "Cables 196",
+        "price": 564.72,
+        "stock": 144
+    },
+    {
+        "name": "Charger Adapter 197",
+        "price": 1803.33,
+        "stock": 151
+    },
+    {
+        "name": "Charger Adapter 198",
+        "price": 4848.7,
+        "stock": 50
+    },
+    {
+        "name": "Napkins 199",
+        "price": 3783.79,
+        "stock": 150
+    },
+    {
+        "name": "Cookies 200",
+        "price": 369.7,
+        "stock": 42
+    },
+    {
+        "name": "Pen 201",
+        "price": 694.54,
+        "stock": 23
+    },
+    {
+        "name": "Markers 202",
+        "price": 4826.09,
+        "stock": 176
+    },
+    {
+        "name": "Screwdriver 203",
+        "price": 2193.37,
+        "stock": 83
+    },
+    {
+        "name": "Spices 204",
+        "price": 1154.93,
+        "stock": 149
+    },
+    {
+        "name": "Lunch Box 205",
+        "price": 1477.3,
+        "stock": 110
+    },
+    {
+        "name": "LED Bulb 206",
+        "price": 2404.9,
+        "stock": 155
+    },
+    {
+        "name": "Face Cream 207",
+        "price": 2383.19,
+        "stock": 180
+    },
+    {
+        "name": "Broom 208",
+        "price": 3968.76,
+        "stock": 111
+    },
+    {
+        "name": "Biscuits 209",
+        "price": 463.09,
+        "stock": 137
+    },
+    {
+        "name": "Milk Powder 210",
+        "price": 4145.13,
+        "stock": 46
+    },
+    {
+        "name": "Tea Powder 211",
+        "price": 3777.92,
+        "stock": 41
+    },
+    {
+        "name": "Face Cream 212",
+        "price": 232.6,
+        "stock": 183
+    },
+    {
+        "name": "Shaving Foam 213",
+        "price": 3209.31,
+        "stock": 124
+    },
+    {
+        "name": "Tea Powder 214",
+        "price": 781.8,
+        "stock": 166
+    },
+    {
+        "name": "Detergent 215",
+        "price": 4496.37,
+        "stock": 175
+    },
+    {
+        "name": "Pencil 216",
+        "price": 2401.96,
+        "stock": 51
+    },
+    {
+        "name": "Tea Powder 217",
+        "price": 1000.51,
+        "stock": 22
+    },
+    {
+        "name": "Cookies 218",
+        "price": 4128.11,
+        "stock": 12
+    },
+    {
+        "name": "Milk Powder 219",
+        "price": 188.06,
+        "stock": 28
+    },
+    {
+        "name": "Juice 220",
+        "price": 750.89,
+        "stock": 154
+    },
+    {
+        "name": "Tissues 221",
+        "price": 945.8,
+        "stock": 157
+    },
+    {
+        "name": "Biscuits 222",
+        "price": 800.77,
+        "stock": 131
+    },
+    {
+        "name": "Air Freshener 223",
+        "price": 3810.76,
+        "stock": 33
+    },
+    {
+        "name": "LED Bulb 224",
+        "price": 4410.21,
+        "stock": 98
+    },
+    {
+        "name": "Frying Pan 225",
+        "price": 2808.72,
+        "stock": 14
+    },
+    {
+        "name": "Markers 226",
+        "price": 836.29,
+        "stock": 48
+    },
+    {
+        "name": "Biscuits 227",
+        "price": 2510.68,
+        "stock": 195
+    },
+    {
+        "name": "Soap Dish 228",
+        "price": 1006.16,
+        "stock": 162
+    },
+    {
+        "name": "Mosquito Coil 229",
+        "price": 1027.83,
+        "stock": 10
+    },
+    {
+        "name": "Soap 230",
+        "price": 1720.13,
+        "stock": 58
+    },
+    {
+        "name": "Mosquito Coil 231",
+        "price": 4341.92,
+        "stock": 57
+    },
+    {
+        "name": "Chips 232",
+        "price": 4527.73,
+        "stock": 200
+    },
+    {
+        "name": "Sugar 233",
+        "price": 4067.61,
+        "stock": 132
+    },
+    {
+        "name": "Extension Box 234",
+        "price": 1380.02,
+        "stock": 46
+    },
+    {
+        "name": "Spices 235",
+        "price": 2637.95,
+        "stock": 103
+    },
+    {
+        "name": "Markers 236",
+        "price": 2876.93,
+        "stock": 21
+    },
+    {
+        "name": "Coffee 237",
+        "price": 2212.72,
+        "stock": 9
+    },
+    {
+        "name": "Eraser 238",
+        "price": 2567.55,
+        "stock": 144
+    },
+    {
+        "name": "Electric Kettle 239",
+        "price": 2500.03,
+        "stock": 167
+    },
+    {
+        "name": "Mosquito Coil 240",
+        "price": 393.51,
+        "stock": 125
+    },
+    {
+        "name": "Folders 241",
+        "price": 2884.92,
+        "stock": 151
+    },
+    {
+        "name": "Battery AAA 242",
+        "price": 1009.31,
+        "stock": 21
+    },
+    {
+        "name": "USB Cable 243",
+        "price": 1835.01,
+        "stock": 87
+    },
+    {
+        "name": "Handwash 244",
+        "price": 3112.91,
+        "stock": 141
+    },
+    {
+        "name": "Keyboard 245",
+        "price": 1009.02,
+        "stock": 85
+    },
+    {
+        "name": "USB Cable 246",
+        "price": 1150.17,
+        "stock": 19
+    },
+    {
+        "name": "Glass Set 247",
+        "price": 517.72,
+        "stock": 186
+    },
+    {
+        "name": "Tissues 248",
+        "price": 26.07,
+        "stock": 153
+    },
+    {
+        "name": "Face Cream 249",
+        "price": 2633.15,
+        "stock": 48
+    },
+    {
+        "name": "Juice 250",
+        "price": 833.37,
+        "stock": 181
+    },
+    {
+        "name": "Soap 251",
+        "price": 3767.52,
+        "stock": 124
+    },
+    {
+        "name": "Coffee 252",
+        "price": 2915.83,
+        "stock": 91
+    },
+    {
+        "name": "Handwash 253",
+        "price": 4086.32,
+        "stock": 72
+    },
+    {
+        "name": "Sugar 254",
+        "price": 558.67,
+        "stock": 106
+    },
+    {
+        "name": "Spices 255",
+        "price": 279.28,
+        "stock": 195
+    },
+    {
+        "name": "Spices 256",
+        "price": 2630.53,
+        "stock": 79
+    },
+    {
+        "name": "Lunch Box 257",
+        "price": 3149.85,
+        "stock": 42
+    },
+    {
+        "name": "LED Torch 258",
+        "price": 1594.19,
+        "stock": 23
+    },
+    {
+        "name": "Glass Set 259",
+        "price": 4534.69,
+        "stock": 94
+    },
+    {
+        "name": "Extension Box 260",
+        "price": 4665.45,
+        "stock": 146
+    },
+    {
+        "name": "Water Bottle 261",
+        "price": 3728.63,
+        "stock": 92
+    },
+    {
+        "name": "Toothbrush 262",
+        "price": 1435.61,
+        "stock": 10
+    },
+    {
+        "name": "Glass Set 263",
+        "price": 4624.55,
+        "stock": 166
+    },
+    {
+        "name": "Rice 264",
+        "price": 1210.14,
+        "stock": 152
+    },
+    {
+        "name": "Face Cream 265",
+        "price": 2894.14,
+        "stock": 150
+    },
+    {
+        "name": "Juice 266",
+        "price": 1349.62,
+        "stock": 5
+    },
+    {
+        "name": "Sugar 267",
+        "price": 4119.57,
+        "stock": 61
+    },
+    {
+        "name": "Water Bottle 268",
+        "price": 2111.34,
+        "stock": 169
+    },
+    {
+        "name": "Soap 269",
+        "price": 971.53,
+        "stock": 145
+    },
+    {
+        "name": "Cookies 270",
+        "price": 4851.89,
+        "stock": 16
+    },
+    {
+        "name": "Shaving Foam 271",
+        "price": 3326.45,
+        "stock": 52
+    },
+    {
+        "name": "Salt 272",
+        "price": 4543.0,
+        "stock": 52
+    },
+    {
+        "name": "Mop 273",
+        "price": 37.49,
+        "stock": 48
+    },
+    {
+        "name": "Mop 274",
+        "price": 4075.15,
+        "stock": 81
+    },
+    {
+        "name": "Juice 275",
+        "price": 2500.07,
+        "stock": 118
+    },
+    {
+        "name": "Battery AAA 276",
+        "price": 4408.91,
+        "stock": 194
+    },
+    {
+        "name": "Pencil 277",
+        "price": 2709.27,
+        "stock": 65
+    },
+    {
+        "name": "USB Cable 278",
+        "price": 1560.27,
+        "stock": 28
+    },
+    {
+        "name": "Napkins 279",
+        "price": 553.35,
+        "stock": 14
+    },
+    {
+        "name": "Water Bottle 280",
+        "price": 3445.46,
+        "stock": 81
+    },
+    {
+        "name": "Battery AAA 281",
+        "price": 4716.67,
+        "stock": 161
+    },
+    {
+        "name": "Coffee 282",
+        "price": 3424.65,
+        "stock": 111
+    },
+    {
+        "name": "Hair Oil 283",
+        "price": 416.29,
+        "stock": 28
+    },
+    {
+        "name": "Glue 284",
+        "price": 4896.12,
+        "stock": 104
+    },
+    {
+        "name": "Battery AAA 285",
+        "price": 1320.41,
+        "stock": 114
+    },
+    {
+        "name": "Hair Oil 286",
+        "price": 508.16,
+        "stock": 67
+    },
+    {
+        "name": "Lunch Box 287",
+        "price": 2927.83,
+        "stock": 16
+    },
+    {
+        "name": "Rice 288",
+        "price": 3754.3,
+        "stock": 12
+    },
+    {
+        "name": "Noodles 289",
+        "price": 2302.94,
+        "stock": 194
+    },
+    {
+        "name": "Mobile Charger 290",
+        "price": 4202.59,
+        "stock": 198
+    },
+    {
+        "name": "Face Cream 291",
+        "price": 2629.81,
+        "stock": 193
+    },
+    {
+        "name": "Brush 292",
+        "price": 1800.44,
+        "stock": 33
+    },
+    {
+        "name": "Bucket 293",
+        "price": 2371.59,
+        "stock": 33
+    },
+    {
+        "name": "Notebook 294",
+        "price": 1888.31,
+        "stock": 165
+    },
+    {
+        "name": "Brush 295",
+        "price": 2343.96,
+        "stock": 39
+    },
+    {
+        "name": "Headphones 296",
+        "price": 4121.07,
+        "stock": 188
+    },
+    {
+        "name": "Soap 297",
+        "price": 3917.62,
+        "stock": 144
+    },
+    {
+        "name": "Air Freshener 298",
+        "price": 1470.19,
+        "stock": 137
+    },
+    {
+        "name": "Soap Dish 299",
+        "price": 1355.55,
+        "stock": 122
+    },
+    {
+        "name": "Body Lotion 300",
+        "price": 2180.38,
+        "stock": 5
+    },
+    {
+        "name": "Coffee 301",
+        "price": 1699.27,
+        "stock": 118
+    },
+    {
+        "name": "Spoon Set 302",
+        "price": 3501.85,
+        "stock": 136
+    },
+    {
+        "name": "Hammer 303",
+        "price": 4190.91,
+        "stock": 81
+    },
+    {
+        "name": "Shampoo 304",
+        "price": 104.95,
+        "stock": 21
+    },
+    {
+        "name": "Body Lotion 305",
+        "price": 1648.41,
+        "stock": 161
+    },
+    {
+        "name": "Soap Dish 306",
+        "price": 3121.59,
+        "stock": 82
+    },
+    {
+        "name": "Notebook 307",
+        "price": 1380.5,
+        "stock": 26
+    },
+    {
+        "name": "Air Freshener 308",
+        "price": 3895.76,
+        "stock": 132
+    },
+    {
+        "name": "Battery AA 309",
+        "price": 3267.32,
+        "stock": 36
+    },
+    {
+        "name": "Tissues 310",
+        "price": 4195.31,
+        "stock": 181
+    },
+    {
+        "name": "Bucket 311",
+        "price": 481.93,
+        "stock": 126
+    },
+    {
+        "name": "Shampoo 312",
+        "price": 3554.48,
+        "stock": 114
+    },
+    {
+        "name": "Cookies 313",
+        "price": 4458.98,
+        "stock": 78
+    },
+    {
+        "name": "Mop 314",
+        "price": 2736.94,
+        "stock": 132
+    },
+    {
+        "name": "Plate Set 315",
+        "price": 436.09,
+        "stock": 131
+    },
+    {
+        "name": "Napkins 316",
+        "price": 1577.33,
+        "stock": 157
+    },
+    {
+        "name": "Pen 317",
+        "price": 50.63,
+        "stock": 111
+    },
+    {
+        "name": "Glass Set 318",
+        "price": 4207.68,
+        "stock": 39
+    },
+    {
+        "name": "Broom 319",
+        "price": 2115.51,
+        "stock": 103
+    },
+    {
+        "name": "Mug 320",
+        "price": 1598.24,
+        "stock": 175
+    },
+    {
+        "name": "Juice 321",
+        "price": 943.25,
+        "stock": 81
+    },
+    {
+        "name": "Hair Oil 322",
+        "price": 835.5,
+        "stock": 100
+    },
+    {
+        "name": "Mosquito Coil 323",
+        "price": 1856.11,
+        "stock": 183
+    },
+    {
+        "name": "Handwash 324",
+        "price": 2279.6,
+        "stock": 134
+    },
+    {
+        "name": "Markers 325",
+        "price": 1863.55,
+        "stock": 91
+    },
+    {
+        "name": "Lunch Box 326",
+        "price": 2498.88,
+        "stock": 5
+    },
+    {
+        "name": "Mosquito Coil 327",
+        "price": 4608.72,
+        "stock": 49
+    },
+    {
+        "name": "Body Lotion 328",
+        "price": 2226.47,
+        "stock": 46
+    },
+    {
+        "name": "Oil 329",
+        "price": 55.58,
+        "stock": 21
+    },
+    {
+        "name": "Shampoo 330",
+        "price": 3720.29,
+        "stock": 32
+    },
+    {
+        "name": "Detergent 331",
+        "price": 436.16,
+        "stock": 163
+    },
+    {
+        "name": "Face Cream 332",
+        "price": 1434.51,
+        "stock": 53
+    },
+    {
+        "name": "Eraser 333",
+        "price": 4080.32,
+        "stock": 115
+    },
+    {
+        "name": "Chips 334",
+        "price": 571.67,
+        "stock": 177
+    },
+    {
+        "name": "Battery AAA 335",
+        "price": 3246.19,
+        "stock": 74
+    },
+    {
+        "name": "Spices 336",
+        "price": 644.31,
+        "stock": 186
+    },
+    {
+        "name": "Bucket 337",
+        "price": 4559.29,
+        "stock": 94
+    },
+    {
+        "name": "Spoon Set 338",
+        "price": 2244.0,
+        "stock": 152
+    },
+    {
+        "name": "LED Bulb 339",
+        "price": 1149.31,
+        "stock": 94
+    },
+    {
+        "name": "Extension Box 340",
+        "price": 1089.28,
+        "stock": 177
+    },
+    {
+        "name": "Cool Drink 341",
+        "price": 4307.22,
+        "stock": 86
+    },
+    {
+        "name": "Hammer 342",
+        "price": 191.71,
+        "stock": 122
+    },
+    {
+        "name": "Tissues 343",
+        "price": 3787.68,
+        "stock": 144
+    },
+    {
+        "name": "Spoon Set 344",
+        "price": 1325.42,
+        "stock": 120
+    },
+    {
+        "name": "Charger Adapter 345",
+        "price": 2556.41,
+        "stock": 39
+    },
+    {
+        "name": "Air Freshener 346",
+        "price": 3964.12,
+        "stock": 131
+    },
+    {
+        "name": "Noodles 347",
+        "price": 732.0,
+        "stock": 188
+    },
+    {
+        "name": "USB Cable 348",
+        "price": 1566.8,
+        "stock": 16
+    },
+    {
+        "name": "Notebook 349",
+        "price": 3751.01,
+        "stock": 134
+    },
+    {
+        "name": "Headphones 350",
+        "price": 58.06,
+        "stock": 67
+    },
+    {
+        "name": "Body Lotion 351",
+        "price": 3897.52,
+        "stock": 200
+    },
+    {
+        "name": "Detergent 352",
+        "price": 3645.31,
+        "stock": 165
+    },
+    {
+        "name": "Mosquito Coil 353",
+        "price": 2601.9,
+        "stock": 27
+    },
+    {
+        "name": "Frying Pan 354",
+        "price": 3419.71,
+        "stock": 97
+    },
+    {
+        "name": "Salt 355",
+        "price": 190.89,
+        "stock": 75
+    },
+    {
+        "name": "Coffee 356",
+        "price": 932.62,
+        "stock": 149
+    },
+    {
+        "name": "Chips 357",
+        "price": 4716.39,
+        "stock": 66
+    },
+    {
+        "name": "Pen 358",
+        "price": 3990.68,
+        "stock": 188
+    },
+    {
+        "name": "Mouse 359",
+        "price": 4297.3,
+        "stock": 68
+    },
+    {
+        "name": "Battery AAA 360",
+        "price": 4841.59,
+        "stock": 175
+    },
+    {
+        "name": "Markers 361",
+        "price": 2391.57,
+        "stock": 120
+    },
+    {
+        "name": "Shampoo 362",
+        "price": 1345.51,
+        "stock": 167
+    },
+    {
+        "name": "Shampoo 363",
+        "price": 363.41,
+        "stock": 169
+    },
+    {
+        "name": "Tissues 364",
+        "price": 2053.45,
+        "stock": 174
+    },
+    {
+        "name": "Plate Set 365",
+        "price": 1825.53,
+        "stock": 158
+    },
+    {
+        "name": "Chips 366",
+        "price": 1709.82,
+        "stock": 34
+    },
+    {
+        "name": "Tissues 367",
+        "price": 1013.73,
+        "stock": 112
+    },
+    {
+        "name": "Salt 368",
+        "price": 4985.76,
+        "stock": 94
+    },
+    {
+        "name": "Folders 369",
+        "price": 324.34,
+        "stock": 116
+    },
+    {
+        "name": "Air Freshener 370",
+        "price": 572.73,
+        "stock": 53
+    },
+    {
+        "name": "LED Bulb 371",
+        "price": 4411.67,
+        "stock": 38
+    },
+    {
+        "name": "Air Freshener 372",
+        "price": 886.87,
+        "stock": 140
+    },
+    {
+        "name": "Hair Oil 373",
+        "price": 2722.66,
+        "stock": 191
+    },
+    {
+        "name": "Lunch Box 374",
+        "price": 2475.14,
+        "stock": 148
+    },
+    {
+        "name": "Markers 375",
+        "price": 3351.23,
+        "stock": 69
+    },
+    {
+        "name": "Plate Set 376",
+        "price": 4385.81,
+        "stock": 67
+    },
+    {
+        "name": "Battery AA 377",
+        "price": 4507.9,
+        "stock": 14
+    },
+    {
+        "name": "Lunch Box 378",
+        "price": 1297.67,
+        "stock": 76
+    },
+    {
+        "name": "Glass Set 379",
+        "price": 1581.21,
+        "stock": 117
+    },
+    {
+        "name": "Broom 380",
+        "price": 3244.8,
+        "stock": 133
+    },
+    {
+        "name": "Spices 381",
+        "price": 216.1,
+        "stock": 194
+    },
+    {
+        "name": "Mouse 382",
+        "price": 1206.56,
+        "stock": 22
+    },
+    {
+        "name": "Cool Drink 383",
+        "price": 3628.33,
+        "stock": 80
+    },
+    {
+        "name": "Spoon Set 384",
+        "price": 868.39,
+        "stock": 146
+    },
+    {
+        "name": "Shampoo 385",
+        "price": 3601.77,
+        "stock": 39
+    },
+    {
+        "name": "Markers 386",
+        "price": 4431.08,
+        "stock": 8
+    },
+    {
+        "name": "Mop 387",
+        "price": 3407.21,
+        "stock": 95
+    },
+    {
+        "name": "Extension Box 388",
+        "price": 2846.96,
+        "stock": 97
+    },
+    {
+        "name": "Glue 389",
+        "price": 3937.44,
+        "stock": 169
+    },
+    {
+        "name": "Tape 390",
+        "price": 264.13,
+        "stock": 113
+    },
+    {
+        "name": "Tea Powder 391",
+        "price": 2092.66,
+        "stock": 122
+    },
+    {
+        "name": "Electric Kettle 392",
+        "price": 4221.66,
+        "stock": 149
+    },
+    {
+        "name": "Headphones 393",
+        "price": 308.7,
+        "stock": 98
+    },
+    {
+        "name": "Milk Powder 394",
+        "price": 3195.33,
+        "stock": 75
+    },
+    {
+        "name": "Battery AA 395",
+        "price": 4406.06,
+        "stock": 93
+    },
+    {
+        "name": "Spoon Set 396",
+        "price": 2733.54,
+        "stock": 41
+    },
+    {
+        "name": "Lunch Box 397",
+        "price": 3931.31,
+        "stock": 135
+    },
+    {
+        "name": "Toothpaste 398",
+        "price": 4084.89,
+        "stock": 128
+    },
+    {
+        "name": "Face Cream 399",
+        "price": 3779.43,
+        "stock": 180
+    },
+    {
+        "name": "Hair Oil 400",
+        "price": 3888.19,
+        "stock": 148
+    },
+    {
+        "name": "USB Cable 401",
+        "price": 852.37,
+        "stock": 122
+    },
+    {
+        "name": "Frying Pan 402",
+        "price": 2691.65,
+        "stock": 35
+    },
+    {
+        "name": "Frying Pan 403",
+        "price": 1500.37,
+        "stock": 118
+    },
+    {
+        "name": "Charger Adapter 404",
+        "price": 333.05,
+        "stock": 8
+    },
+    {
+        "name": "Extension Box 405",
+        "price": 894.93,
+        "stock": 55
+    },
+    {
+        "name": "Frying Pan 406",
+        "price": 2986.65,
+        "stock": 30
+    },
+    {
+        "name": "Tissues 407",
+        "price": 2836.32,
+        "stock": 97
+    },
+    {
+        "name": "Mosquito Coil 408",
+        "price": 4720.04,
+        "stock": 153
+    },
+    {
+        "name": "Soap Dish 409",
+        "price": 2002.06,
+        "stock": 23
+    },
+    {
+        "name": "Lunch Box 410",
+        "price": 2387.84,
+        "stock": 82
+    },
+    {
+        "name": "Toothbrush 411",
+        "price": 3640.96,
+        "stock": 132
+    },
+    {
+        "name": "Toothbrush 412",
+        "price": 2738.47,
+        "stock": 119
+    },
+    {
+        "name": "Glue 413",
+        "price": 3810.17,
+        "stock": 171
+    },
+    {
+        "name": "Glue 414",
+        "price": 2076.53,
+        "stock": 141
+    },
+    {
+        "name": "Mosquito Coil 415",
+        "price": 2815.99,
+        "stock": 104
+    },
+    {
+        "name": "Glass Set 416",
+        "price": 734.04,
+        "stock": 145
+    },
+    {
+        "name": "Cool Drink 417",
+        "price": 4433.88,
+        "stock": 150
+    },
+    {
+        "name": "Battery AA 418",
+        "price": 2140.61,
+        "stock": 57
+    },
+    {
+        "name": "Shampoo 419",
+        "price": 673.78,
+        "stock": 50
+    },
+    {
+        "name": "Chips 420",
+        "price": 3141.45,
+        "stock": 179
+    },
+    {
+        "name": "Eraser 421",
+        "price": 3750.3,
+        "stock": 133
+    },
+    {
+        "name": "Oil 422",
+        "price": 3841.2,
+        "stock": 61
+    },
+    {
+        "name": "Pen 423",
+        "price": 1874.63,
+        "stock": 88
+    },
+    {
+        "name": "Salt 424",
+        "price": 4876.75,
+        "stock": 57
+    },
+    {
+        "name": "Electric Kettle 425",
+        "price": 4053.39,
+        "stock": 94
+    },
+    {
+        "name": "Mosquito Coil 426",
+        "price": 721.26,
+        "stock": 78
+    },
+    {
+        "name": "Lunch Box 427",
+        "price": 3676.57,
+        "stock": 133
+    },
+    {
+        "name": "Face Cream 428",
+        "price": 2302.47,
+        "stock": 14
+    },
+    {
+        "name": "Electric Kettle 429",
+        "price": 1141.35,
+        "stock": 122
+    },
+    {
+        "name": "Extension Box 430",
+        "price": 4936.81,
+        "stock": 146
+    },
+    {
+        "name": "Sugar 431",
+        "price": 3722.72,
+        "stock": 87
+    },
+    {
+        "name": "LED Torch 432",
+        "price": 4713.04,
+        "stock": 53
+    },
+    {
+        "name": "Pen 433",
+        "price": 2331.58,
+        "stock": 90
+    },
+    {
+        "name": "Mosquito Coil 434",
+        "price": 1310.84,
+        "stock": 17
+    },
+    {
+        "name": "Chips 435",
+        "price": 402.42,
+        "stock": 124
+    },
+    {
+        "name": "LED Bulb 436",
+        "price": 339.18,
+        "stock": 157
+    },
+    {
+        "name": "Cables 437",
+        "price": 1371.13,
+        "stock": 131
+    },
+    {
+        "name": "Tape 438",
+        "price": 1497.59,
+        "stock": 158
+    },
+    {
+        "name": "Charger Adapter 439",
+        "price": 2651.67,
+        "stock": 74
+    },
+    {
+        "name": "Frying Pan 440",
+        "price": 2928.52,
+        "stock": 19
+    },
+    {
+        "name": "Rice 441",
+        "price": 2932.48,
+        "stock": 107
+    },
+    {
+        "name": "Battery AAA 442",
+        "price": 4127.69,
+        "stock": 24
+    },
+    {
+        "name": "Sugar 443",
+        "price": 1086.02,
+        "stock": 175
+    },
+    {
+        "name": "Cookies 444",
+        "price": 4587.92,
+        "stock": 39
+    },
+    {
+        "name": "LED Torch 445",
+        "price": 3541.1,
+        "stock": 6
+    },
+    {
+        "name": "Cool Drink 446",
+        "price": 950.16,
+        "stock": 52
+    },
+    {
+        "name": "Salt 447",
+        "price": 1778.89,
+        "stock": 195
+    },
+    {
+        "name": "Knife 448",
+        "price": 4849.05,
+        "stock": 52
+    },
+    {
+        "name": "Spoon Set 449",
+        "price": 4533.31,
+        "stock": 198
+    },
+    {
+        "name": "Noodles 450",
+        "price": 3673.63,
+        "stock": 182
+    },
+    {
+        "name": "Charger Adapter 451",
+        "price": 2014.86,
+        "stock": 13
+    },
+    {
+        "name": "Battery AAA 452",
+        "price": 2740.46,
+        "stock": 122
+    },
+    {
+        "name": "Extension Box 453",
+        "price": 3995.6,
+        "stock": 135
+    },
+    {
+        "name": "Hammer 454",
+        "price": 3035.79,
+        "stock": 84
+    },
+    {
+        "name": "Body Lotion 455",
+        "price": 798.96,
+        "stock": 52
+    },
+    {
+        "name": "Handwash 456",
+        "price": 4101.69,
+        "stock": 185
+    },
+    {
+        "name": "Notebook 457",
+        "price": 360.85,
+        "stock": 32
+    },
+    {
+        "name": "Shaving Foam 458",
+        "price": 735.55,
+        "stock": 74
+    },
+    {
+        "name": "Shampoo 459",
+        "price": 2999.03,
+        "stock": 98
+    },
+    {
+        "name": "Detergent 460",
+        "price": 3150.98,
+        "stock": 121
+    },
+    {
+        "name": "Extension Box 461",
+        "price": 629.04,
+        "stock": 46
+    },
+    {
+        "name": "LED Bulb 462",
+        "price": 3204.3,
+        "stock": 147
+    },
+    {
+        "name": "Headphones 463",
+        "price": 1567.67,
+        "stock": 188
+    },
+    {
+        "name": "Notebook 464",
+        "price": 2324.92,
+        "stock": 191
+    },
+    {
+        "name": "LED Torch 465",
+        "price": 4472.05,
+        "stock": 35
+    },
+    {
+        "name": "Tissues 466",
+        "price": 781.85,
+        "stock": 189
+    },
+    {
+        "name": "Oil 467",
+        "price": 4707.74,
+        "stock": 113
+    },
+    {
+        "name": "Detergent 468",
+        "price": 4521.55,
+        "stock": 84
+    },
+    {
+        "name": "Tape 469",
+        "price": 376.09,
+        "stock": 79
+    },
+    {
+        "name": "Chips 470",
+        "price": 2837.67,
+        "stock": 119
+    },
+    {
+        "name": "Extension Box 471",
+        "price": 2220.82,
+        "stock": 91
+    },
+    {
+        "name": "Body Lotion 472",
+        "price": 3633.55,
+        "stock": 163
+    },
+    {
+        "name": "USB Cable 473",
+        "price": 1154.15,
+        "stock": 106
+    },
+    {
+        "name": "Water Bottle 474",
+        "price": 3708.17,
+        "stock": 154
+    },
+    {
+        "name": "Markers 475",
+        "price": 1631.83,
+        "stock": 169
+    },
+    {
+        "name": "Cool Drink 476",
+        "price": 4491.18,
+        "stock": 114
+    },
+    {
+        "name": "Folders 477",
+        "price": 4782.93,
+        "stock": 191
+    },
+    {
+        "name": "Battery AA 478",
+        "price": 122.84,
+        "stock": 42
+    },
+    {
+        "name": "Frying Pan 479",
+        "price": 4108.09,
+        "stock": 163
+    },
+    {
+        "name": "Water Bottle 480",
+        "price": 729.97,
+        "stock": 190
+    },
+    {
+        "name": "Tea Powder 481",
+        "price": 4915.37,
+        "stock": 85
+    },
+    {
+        "name": "Brush 482",
+        "price": 666.14,
+        "stock": 119
+    },
+    {
+        "name": "Battery AAA 483",
+        "price": 1694.31,
+        "stock": 49
+    },
+    {
+        "name": "Tissues 484",
+        "price": 4866.06,
+        "stock": 175
+    },
+    {
+        "name": "Screwdriver 485",
+        "price": 929.11,
+        "stock": 112
+    },
+    {
+        "name": "Sugar 486",
+        "price": 1046.62,
+        "stock": 91
+    },
+    {
+        "name": "Frying Pan 487",
+        "price": 2760.55,
+        "stock": 21
+    },
+    {
+        "name": "Battery AA 488",
+        "price": 4993.29,
+        "stock": 114
+    },
+    {
+        "name": "Plate Set 489",
+        "price": 4624.79,
+        "stock": 106
+    },
+    {
+        "name": "Mop 490",
+        "price": 541.23,
+        "stock": 177
+    },
+    {
+        "name": "Notebook 491",
+        "price": 3362.43,
+        "stock": 161
+    },
+    {
+        "name": "Body Lotion 492",
+        "price": 3094.21,
+        "stock": 151
+    },
+    {
+        "name": "Glue 493",
+        "price": 3779.31,
+        "stock": 47
+    },
+    {
+        "name": "Keyboard 494",
+        "price": 3776.55,
+        "stock": 152
+    },
+    {
+        "name": "Mosquito Coil 495",
+        "price": 4986.62,
+        "stock": 87
+    },
+    {
+        "name": "Extension Box 496",
+        "price": 1438.58,
+        "stock": 173
+    },
+    {
+        "name": "Rice 497",
+        "price": 4214.67,
+        "stock": 171
+    },
+    {
+        "name": "Mop 498",
+        "price": 1255.91,
+        "stock": 173
+    },
+    {
+        "name": "Battery AAA 499",
+        "price": 4482.61,
+        "stock": 27
+    },
+    {
+        "name": "Oil 500",
+        "price": 2150.37,
+        "stock": 91
+    },
+    {
+        "name": "Tissues 501",
+        "price": 2113.96,
+        "stock": 179
+    },
+    {
+        "name": "Spoon Set 502",
+        "price": 3323.88,
+        "stock": 146
+    },
+    {
+        "name": "Milk Powder 503",
+        "price": 2548.54,
+        "stock": 13
+    },
+    {
+        "name": "Battery AAA 504",
+        "price": 3380.21,
+        "stock": 18
+    },
+    {
+        "name": "Keyboard 505",
+        "price": 4929.37,
+        "stock": 24
+    },
+    {
+        "name": "USB Cable 506",
+        "price": 62.89,
+        "stock": 194
+    },
+    {
+        "name": "Air Freshener 507",
+        "price": 3833.3,
+        "stock": 46
+    },
+    {
+        "name": "Charger Adapter 508",
+        "price": 1468.15,
+        "stock": 142
+    },
+    {
+        "name": "Spices 509",
+        "price": 1792.26,
+        "stock": 130
+    },
+    {
+        "name": "Keyboard 510",
+        "price": 2224.75,
+        "stock": 87
+    },
+    {
+        "name": "Napkins 511",
+        "price": 1779.18,
+        "stock": 59
+    },
+    {
+        "name": "Keyboard 512",
+        "price": 2323.4,
+        "stock": 154
+    },
+    {
+        "name": "Mosquito Coil 513",
+        "price": 3826.99,
+        "stock": 126
+    },
+    {
+        "name": "Hair Oil 514",
+        "price": 3447.33,
+        "stock": 107
+    },
+    {
+        "name": "Air Freshener 515",
+        "price": 3427.06,
+        "stock": 38
+    },
+    {
+        "name": "Chips 516",
+        "price": 3893.62,
+        "stock": 152
+    },
+    {
+        "name": "Pencil 517",
+        "price": 3475.65,
+        "stock": 112
+    },
+    {
+        "name": "Soap Dish 518",
+        "price": 783.46,
+        "stock": 198
+    },
+    {
+        "name": "Handwash 519",
+        "price": 1387.78,
+        "stock": 91
+    },
+    {
+        "name": "Chips 520",
+        "price": 4554.76,
+        "stock": 169
+    },
+    {
+        "name": "Hammer 521",
+        "price": 611.05,
+        "stock": 150
+    },
+    {
+        "name": "Spoon Set 522",
+        "price": 1931.17,
+        "stock": 13
+    },
+    {
+        "name": "Screwdriver 523",
+        "price": 1980.45,
+        "stock": 81
+    },
+    {
+        "name": "Cookies 524",
+        "price": 1741.15,
+        "stock": 76
+    },
+    {
+        "name": "Face Cream 525",
+        "price": 406.16,
+        "stock": 158
+    },
+    {
+        "name": "Battery AAA 526",
+        "price": 3907.53,
+        "stock": 36
+    },
+    {
+        "name": "Screwdriver 527",
+        "price": 900.07,
+        "stock": 153
+    },
+    {
+        "name": "LED Torch 528",
+        "price": 4771.97,
+        "stock": 167
+    },
+    {
+        "name": "Spoon Set 529",
+        "price": 199.63,
+        "stock": 97
+    },
+    {
+        "name": "Lunch Box 530",
+        "price": 2182.28,
+        "stock": 84
+    },
+    {
+        "name": "Cookies 531",
+        "price": 3977.31,
+        "stock": 173
+    },
+    {
+        "name": "Shaving Foam 532",
+        "price": 1121.16,
+        "stock": 171
+    },
+    {
+        "name": "Spoon Set 533",
+        "price": 328.41,
+        "stock": 28
+    },
+    {
+        "name": "Battery AAA 534",
+        "price": 2648.4,
+        "stock": 58
+    },
+    {
+        "name": "Noodles 535",
+        "price": 3561.71,
+        "stock": 136
+    },
+    {
+        "name": "Notebook 536",
+        "price": 4091.33,
+        "stock": 19
+    },
+    {
+        "name": "Noodles 537",
+        "price": 4207.51,
+        "stock": 167
+    },
+    {
+        "name": "Noodles 538",
+        "price": 4970.92,
+        "stock": 118
+    },
+    {
+        "name": "Cables 539",
+        "price": 2752.53,
+        "stock": 64
+    },
+    {
+        "name": "Detergent 540",
+        "price": 311.04,
+        "stock": 75
+    },
+    {
+        "name": "Water Bottle 541",
+        "price": 1998.19,
+        "stock": 179
+    },
+    {
+        "name": "Shampoo 542",
+        "price": 102.96,
+        "stock": 96
+    },
+    {
+        "name": "Shampoo 543",
+        "price": 288.34,
+        "stock": 56
+    },
+    {
+        "name": "Shaving Foam 544",
+        "price": 616.24,
+        "stock": 34
+    },
+    {
+        "name": "Plate Set 545",
+        "price": 2442.13,
+        "stock": 32
+    },
+    {
+        "name": "Broom 546",
+        "price": 1795.17,
+        "stock": 147
+    },
+    {
+        "name": "Tea Powder 547",
+        "price": 1095.73,
+        "stock": 185
+    },
+    {
+        "name": "Salt 548",
+        "price": 2143.62,
+        "stock": 60
+    },
+    {
+        "name": "Shampoo 549",
+        "price": 3623.0,
+        "stock": 181
+    },
+    {
+        "name": "Napkins 550",
+        "price": 1497.24,
+        "stock": 87
+    },
+    {
+        "name": "LED Bulb 551",
+        "price": 4003.06,
+        "stock": 140
+    },
+    {
+        "name": "Cookies 552",
+        "price": 2731.66,
+        "stock": 61
+    },
+    {
+        "name": "Keyboard 553",
+        "price": 3537.93,
+        "stock": 198
+    },
+    {
+        "name": "Air Freshener 554",
+        "price": 1737.72,
+        "stock": 150
+    },
+    {
+        "name": "Glue 555",
+        "price": 1859.07,
+        "stock": 132
+    },
+    {
+        "name": "USB Cable 556",
+        "price": 4475.88,
+        "stock": 114
+    },
+    {
+        "name": "Cool Drink 557",
+        "price": 4146.35,
+        "stock": 136
+    },
+    {
+        "name": "USB Cable 558",
+        "price": 1299.13,
+        "stock": 33
+    },
+    {
+        "name": "Bucket 559",
+        "price": 776.93,
+        "stock": 11
+    },
+    {
+        "name": "Sugar 560",
+        "price": 971.08,
+        "stock": 61
+    },
+    {
+        "name": "Air Freshener 561",
+        "price": 4881.99,
+        "stock": 16
+    },
+    {
+        "name": "Detergent 562",
+        "price": 1662.19,
+        "stock": 41
+    },
+    {
+        "name": "Cables 563",
+        "price": 687.41,
+        "stock": 176
+    },
+    {
+        "name": "Sugar 564",
+        "price": 3518.52,
+        "stock": 158
+    },
+    {
+        "name": "Glue 565",
+        "price": 448.72,
+        "stock": 176
+    },
+    {
+        "name": "Electric Kettle 566",
+        "price": 1559.57,
+        "stock": 95
+    },
+    {
+        "name": "Salt 567",
+        "price": 2137.83,
+        "stock": 50
+    },
+    {
+        "name": "Body Lotion 568",
+        "price": 4187.64,
+        "stock": 146
+    },
+    {
+        "name": "Mosquito Coil 569",
+        "price": 2323.93,
+        "stock": 53
+    },
+    {
+        "name": "Plate Set 570",
+        "price": 3286.28,
+        "stock": 139
+    },
+    {
+        "name": "Soap 571",
+        "price": 1569.03,
+        "stock": 123
+    },
+    {
+        "name": "Battery AA 572",
+        "price": 4854.18,
+        "stock": 152
+    },
+    {
+        "name": "Cool Drink 573",
+        "price": 3712.61,
+        "stock": 182
+    },
+    {
+        "name": "Lunch Box 574",
+        "price": 1378.04,
+        "stock": 152
+    },
+    {
+        "name": "Milk Powder 575",
+        "price": 3482.46,
+        "stock": 92
+    },
+    {
+        "name": "Toothbrush 576",
+        "price": 2798.31,
+        "stock": 104
+    },
+    {
+        "name": "Soap Dish 577",
+        "price": 3205.9,
+        "stock": 62
+    },
+    {
+        "name": "Cool Drink 578",
+        "price": 2552.62,
+        "stock": 184
+    },
+    {
+        "name": "Chips 579",
+        "price": 4353.45,
+        "stock": 136
+    },
+    {
+        "name": "Napkins 580",
+        "price": 3669.3,
+        "stock": 156
+    },
+    {
+        "name": "Juice 581",
+        "price": 130.73,
+        "stock": 173
+    },
+    {
+        "name": "Air Freshener 582",
+        "price": 1949.43,
+        "stock": 116
+    },
+    {
+        "name": "Face Cream 583",
+        "price": 2361.71,
+        "stock": 34
+    },
+    {
+        "name": "Salt 584",
+        "price": 4331.55,
+        "stock": 180
+    },
+    {
+        "name": "Tea Powder 585",
+        "price": 297.16,
+        "stock": 94
+    },
+    {
+        "name": "Pen 586",
+        "price": 4140.06,
+        "stock": 57
+    },
+    {
+        "name": "Mug 587",
+        "price": 715.62,
+        "stock": 8
+    },
+    {
+        "name": "USB Cable 588",
+        "price": 2161.54,
+        "stock": 147
+    },
+    {
+        "name": "Shaving Foam 589",
+        "price": 4902.07,
+        "stock": 126
+    },
+    {
+        "name": "Toothbrush 590",
+        "price": 2182.84,
+        "stock": 39
+    },
+    {
+        "name": "Screwdriver 591",
+        "price": 362.31,
+        "stock": 93
+    },
+    {
+        "name": "Battery AA 592",
+        "price": 4088.79,
+        "stock": 142
+    },
+    {
+        "name": "Body Lotion 593",
+        "price": 4261.84,
+        "stock": 84
+    },
+    {
+        "name": "Handwash 594",
+        "price": 4506.15,
+        "stock": 117
+    },
+    {
+        "name": "Brush 595",
+        "price": 3693.1,
+        "stock": 188
+    },
+    {
+        "name": "Brush 596",
+        "price": 4399.5,
+        "stock": 112
+    },
+    {
+        "name": "Oil 597",
+        "price": 1994.65,
+        "stock": 188
+    },
+    {
+        "name": "Mouse 598",
+        "price": 143.95,
+        "stock": 23
+    },
+    {
+        "name": "Shampoo 599",
+        "price": 238.31,
+        "stock": 35
+    },
+    {
+        "name": "Hair Oil 600",
+        "price": 2983.58,
+        "stock": 156
+    },
+    {
+        "name": "Pen 601",
+        "price": 3354.6,
+        "stock": 152
+    },
+    {
+        "name": "Body Lotion 602",
+        "price": 3219.68,
+        "stock": 166
+    },
+    {
+        "name": "Folders 603",
+        "price": 3235.0,
+        "stock": 68
+    },
+    {
+        "name": "Cookies 604",
+        "price": 297.09,
+        "stock": 61
+    },
+    {
+        "name": "Oil 605",
+        "price": 1471.36,
+        "stock": 41
+    },
+    {
+        "name": "Hammer 606",
+        "price": 3213.43,
+        "stock": 104
+    },
+    {
+        "name": "Shaving Foam 607",
+        "price": 557.22,
+        "stock": 12
+    },
+    {
+        "name": "Plate Set 608",
+        "price": 629.18,
+        "stock": 181
+    },
+    {
+        "name": "Detergent 609",
+        "price": 4714.12,
+        "stock": 134
+    },
+    {
+        "name": "Cool Drink 610",
+        "price": 1573.78,
+        "stock": 59
+    },
+    {
+        "name": "Noodles 611",
+        "price": 4578.51,
+        "stock": 113
+    },
+    {
+        "name": "Plate Set 612",
+        "price": 274.44,
+        "stock": 167
+    },
+    {
+        "name": "Bucket 613",
+        "price": 2159.87,
+        "stock": 143
+    },
+    {
+        "name": "Frying Pan 614",
+        "price": 1473.31,
+        "stock": 69
+    },
+    {
+        "name": "Cables 615",
+        "price": 1886.85,
+        "stock": 139
+    },
+    {
+        "name": "Pen 616",
+        "price": 4535.14,
+        "stock": 15
+    },
+    {
+        "name": "Toothbrush 617",
+        "price": 2992.93,
+        "stock": 95
+    },
+    {
+        "name": "Extension Box 618",
+        "price": 3059.91,
+        "stock": 108
+    },
+    {
+        "name": "Shampoo 619",
+        "price": 3275.07,
+        "stock": 24
+    },
+    {
+        "name": "Sugar 620",
+        "price": 331.38,
+        "stock": 176
+    },
+    {
+        "name": "Extension Box 621",
+        "price": 3408.05,
+        "stock": 68
+    },
+    {
+        "name": "Milk Powder 622",
+        "price": 4741.38,
+        "stock": 77
+    },
+    {
+        "name": "Tape 623",
+        "price": 2851.88,
+        "stock": 195
+    },
+    {
+        "name": "Shaving Foam 624",
+        "price": 4682.03,
+        "stock": 46
+    },
+    {
+        "name": "Mosquito Coil 625",
+        "price": 4733.72,
+        "stock": 124
+    },
+    {
+        "name": "Detergent 626",
+        "price": 1567.24,
+        "stock": 86
+    },
+    {
+        "name": "Pencil 627",
+        "price": 4076.09,
+        "stock": 99
+    },
+    {
+        "name": "Body Lotion 628",
+        "price": 3477.89,
+        "stock": 65
+    },
+    {
+        "name": "Salt 629",
+        "price": 657.32,
+        "stock": 95
+    },
+    {
+        "name": "Soap 630",
+        "price": 2518.74,
+        "stock": 190
+    },
+    {
+        "name": "Mosquito Coil 631",
+        "price": 3416.77,
+        "stock": 122
+    },
+    {
+        "name": "Eraser 632",
+        "price": 1145.85,
+        "stock": 62
+    },
+    {
+        "name": "Tissues 633",
+        "price": 4334.04,
+        "stock": 126
+    },
+    {
+        "name": "Toothbrush 634",
+        "price": 2207.21,
+        "stock": 182
+    },
+    {
+        "name": "Air Freshener 635",
+        "price": 2342.42,
+        "stock": 132
+    },
+    {
+        "name": "Keyboard 636",
+        "price": 2951.74,
+        "stock": 181
+    },
+    {
+        "name": "Eraser 637",
+        "price": 4644.7,
+        "stock": 145
+    },
+    {
+        "name": "Broom 638",
+        "price": 1697.37,
+        "stock": 95
+    },
+    {
+        "name": "Chips 639",
+        "price": 1426.5,
+        "stock": 187
+    },
+    {
+        "name": "Markers 640",
+        "price": 2342.95,
+        "stock": 125
+    },
+    {
+        "name": "Mosquito Coil 641",
+        "price": 4068.02,
+        "stock": 99
+    },
+    {
+        "name": "Frying Pan 642",
+        "price": 935.57,
+        "stock": 157
+    },
+    {
+        "name": "Screwdriver 643",
+        "price": 1492.56,
+        "stock": 193
+    },
+    {
+        "name": "Toothbrush 644",
+        "price": 2127.5,
+        "stock": 74
+    },
+    {
+        "name": "Spices 645",
+        "price": 485.2,
+        "stock": 65
+    },
+    {
+        "name": "Charger Adapter 646",
+        "price": 1659.75,
+        "stock": 57
+    },
+    {
+        "name": "Napkins 647",
+        "price": 2933.04,
+        "stock": 104
+    },
+    {
+        "name": "Face Cream 648",
+        "price": 685.16,
+        "stock": 157
+    },
+    {
+        "name": "Spoon Set 649",
+        "price": 2031.06,
+        "stock": 108
+    },
+    {
+        "name": "Milk Powder 650",
+        "price": 980.57,
+        "stock": 68
+    },
+    {
+        "name": "Glass Set 651",
+        "price": 3079.96,
+        "stock": 167
+    },
+    {
+        "name": "Lunch Box 652",
+        "price": 3055.98,
+        "stock": 14
+    },
+    {
+        "name": "Biscuits 653",
+        "price": 3868.21,
+        "stock": 133
+    },
+    {
+        "name": "Biscuits 654",
+        "price": 1963.1,
+        "stock": 53
+    },
+    {
+        "name": "Spoon Set 655",
+        "price": 4870.39,
+        "stock": 178
+    },
+    {
+        "name": "Water Bottle 656",
+        "price": 1387.11,
+        "stock": 134
+    },
+    {
+        "name": "Mobile Charger 657",
+        "price": 4049.59,
+        "stock": 60
+    },
+    {
+        "name": "LED Torch 658",
+        "price": 1348.01,
+        "stock": 76
+    },
+    {
+        "name": "Eraser 659",
+        "price": 3347.94,
+        "stock": 115
+    },
+    {
+        "name": "Spoon Set 660",
+        "price": 253.4,
+        "stock": 181
+    },
+    {
+        "name": "Tissues 661",
+        "price": 64.69,
+        "stock": 59
+    },
+    {
+        "name": "Folders 662",
+        "price": 2804.39,
+        "stock": 42
+    },
+    {
+        "name": "Hammer 663",
+        "price": 2199.37,
+        "stock": 72
+    },
+    {
+        "name": "Glass Set 664",
+        "price": 3243.01,
+        "stock": 177
+    },
+    {
+        "name": "Hair Oil 665",
+        "price": 4490.15,
+        "stock": 191
+    },
+    {
+        "name": "Toothbrush 666",
+        "price": 4349.94,
+        "stock": 128
+    },
+    {
+        "name": "Tea Powder 667",
+        "price": 74.87,
+        "stock": 6
+    },
+    {
+        "name": "Cables 668",
+        "price": 1546.94,
+        "stock": 158
+    },
+    {
+        "name": "Shampoo 669",
+        "price": 415.96,
+        "stock": 177
+    },
+    {
+        "name": "Keyboard 670",
+        "price": 4770.67,
+        "stock": 104
+    },
+    {
+        "name": "Juice 671",
+        "price": 4797.04,
+        "stock": 29
+    },
+    {
+        "name": "Screwdriver 672",
+        "price": 4219.38,
+        "stock": 18
+    },
+    {
+        "name": "Shaving Foam 673",
+        "price": 3141.22,
+        "stock": 66
+    },
+    {
+        "name": "Toothbrush 674",
+        "price": 122.17,
+        "stock": 114
+    },
+    {
+        "name": "Extension Box 675",
+        "price": 1463.3,
+        "stock": 51
+    },
+    {
+        "name": "Hair Oil 676",
+        "price": 3678.53,
+        "stock": 192
+    },
+    {
+        "name": "Tea Powder 677",
+        "price": 320.44,
+        "stock": 83
+    },
+    {
+        "name": "Screwdriver 678",
+        "price": 4100.79,
+        "stock": 19
+    },
+    {
+        "name": "Charger Adapter 679",
+        "price": 3243.73,
+        "stock": 88
+    },
+    {
+        "name": "Tissues 680",
+        "price": 4313.99,
+        "stock": 109
+    },
+    {
+        "name": "Cool Drink 681",
+        "price": 3609.35,
+        "stock": 127
+    },
+    {
+        "name": "Noodles 682",
+        "price": 1528.44,
+        "stock": 63
+    },
+    {
+        "name": "Notebook 683",
+        "price": 2441.68,
+        "stock": 154
+    },
+    {
+        "name": "Body Lotion 684",
+        "price": 4317.82,
+        "stock": 199
+    },
+    {
+        "name": "Sugar 685",
+        "price": 1191.96,
+        "stock": 190
+    },
+    {
+        "name": "LED Bulb 686",
+        "price": 78.64,
+        "stock": 180
+    },
+    {
+        "name": "Tape 687",
+        "price": 1022.6,
+        "stock": 136
+    },
+    {
+        "name": "Body Lotion 688",
+        "price": 3577.17,
+        "stock": 143
+    },
+    {
+        "name": "Knife 689",
+        "price": 3494.8,
+        "stock": 192
+    },
+    {
+        "name": "Shaving Foam 690",
+        "price": 3993.01,
+        "stock": 156
+    },
+    {
+        "name": "Milk Powder 691",
+        "price": 4101.12,
+        "stock": 108
+    },
+    {
+        "name": "Tissues 692",
+        "price": 1700.79,
+        "stock": 104
+    },
+    {
+        "name": "Noodles 693",
+        "price": 4260.36,
+        "stock": 7
+    },
+    {
+        "name": "Charger Adapter 694",
+        "price": 4565.31,
+        "stock": 5
+    },
+    {
+        "name": "Eraser 695",
+        "price": 3316.68,
+        "stock": 178
+    },
+    {
+        "name": "Glass Set 696",
+        "price": 3101.26,
+        "stock": 53
+    },
+    {
+        "name": "Tissues 697",
+        "price": 516.49,
+        "stock": 192
+    },
+    {
+        "name": "Hammer 698",
+        "price": 1549.08,
+        "stock": 164
+    },
+    {
+        "name": "Keyboard 699",
+        "price": 3196.42,
+        "stock": 60
+    },
+    {
+        "name": "Soap 700",
+        "price": 1431.5,
+        "stock": 22
+    },
+    {
+        "name": "Extension Box 701",
+        "price": 4709.86,
+        "stock": 163
+    },
+    {
+        "name": "Screwdriver 702",
+        "price": 1144.63,
+        "stock": 155
+    },
+    {
+        "name": "Soap Dish 703",
+        "price": 2746.1,
+        "stock": 11
+    },
+    {
+        "name": "Air Freshener 704",
+        "price": 1610.12,
+        "stock": 147
+    },
+    {
+        "name": "Mop 705",
+        "price": 4460.15,
+        "stock": 12
+    },
+    {
+        "name": "Cookies 706",
+        "price": 3945.05,
+        "stock": 38
+    },
+    {
+        "name": "Toothpaste 707",
+        "price": 1981.43,
+        "stock": 47
+    },
+    {
+        "name": "Lunch Box 708",
+        "price": 691.59,
+        "stock": 153
+    },
+    {
+        "name": "Glass Set 709",
+        "price": 3563.8,
+        "stock": 10
+    },
+    {
+        "name": "Plate Set 710",
+        "price": 4045.73,
+        "stock": 58
+    },
+    {
+        "name": "Markers 711",
+        "price": 4180.33,
+        "stock": 54
+    },
+    {
+        "name": "Broom 712",
+        "price": 2638.64,
+        "stock": 42
+    },
+    {
+        "name": "Juice 713",
+        "price": 605.0,
+        "stock": 39
+    },
+    {
+        "name": "LED Bulb 714",
+        "price": 3121.19,
+        "stock": 67
+    },
+    {
+        "name": "Cookies 715",
+        "price": 2313.97,
+        "stock": 169
+    },
+    {
+        "name": "Plate Set 716",
+        "price": 652.7,
+        "stock": 16
+    },
+    {
+        "name": "Tape 717",
+        "price": 112.65,
+        "stock": 63
+    },
+    {
+        "name": "Keyboard 718",
+        "price": 4856.48,
+        "stock": 122
+    },
+    {
+        "name": "LED Bulb 719",
+        "price": 3012.57,
+        "stock": 77
+    },
+    {
+        "name": "LED Bulb 720",
+        "price": 3330.32,
+        "stock": 195
+    },
+    {
+        "name": "LED Bulb 721",
+        "price": 4482.4,
+        "stock": 133
+    },
+    {
+        "name": "Hair Oil 722",
+        "price": 796.85,
+        "stock": 37
+    },
+    {
+        "name": "Coffee 723",
+        "price": 1868.88,
+        "stock": 193
+    },
+    {
+        "name": "Toothpaste 724",
+        "price": 2282.54,
+        "stock": 126
+    },
+    {
+        "name": "Napkins 725",
+        "price": 4602.82,
+        "stock": 159
+    },
+    {
+        "name": "Shampoo 726",
+        "price": 1500.84,
+        "stock": 139
+    },
+    {
+        "name": "Juice 727",
+        "price": 3346.71,
+        "stock": 147
+    },
+    {
+        "name": "Mosquito Coil 728",
+        "price": 2413.66,
+        "stock": 182
+    },
+    {
+        "name": "Coffee 729",
+        "price": 4193.6,
+        "stock": 198
+    },
+    {
+        "name": "Oil 730",
+        "price": 80.66,
+        "stock": 145
+    },
+    {
+        "name": "Keyboard 731",
+        "price": 2594.66,
+        "stock": 183
+    },
+    {
+        "name": "Hair Oil 732",
+        "price": 1837.9,
+        "stock": 161
+    },
+    {
+        "name": "Knife 733",
+        "price": 4227.44,
+        "stock": 111
+    },
+    {
+        "name": "Milk Powder 734",
+        "price": 1584.4,
+        "stock": 97
+    },
+    {
+        "name": "Shaving Foam 735",
+        "price": 485.47,
+        "stock": 118
+    },
+    {
+        "name": "Tape 736",
+        "price": 1445.36,
+        "stock": 72
+    },
+    {
+        "name": "Mop 737",
+        "price": 162.62,
+        "stock": 51
+    },
+    {
+        "name": "Body Lotion 738",
+        "price": 2137.68,
+        "stock": 168
+    },
+    {
+        "name": "Spoon Set 739",
+        "price": 4652.22,
+        "stock": 61
+    },
+    {
+        "name": "Battery AAA 740",
+        "price": 3494.65,
+        "stock": 99
+    },
+    {
+        "name": "Spoon Set 741",
+        "price": 1179.23,
+        "stock": 62
+    },
+    {
+        "name": "Tissues 742",
+        "price": 1145.88,
+        "stock": 113
+    },
+    {
+        "name": "Plate Set 743",
+        "price": 2758.37,
+        "stock": 49
+    },
+    {
+        "name": "Noodles 744",
+        "price": 3642.28,
+        "stock": 128
+    },
+    {
+        "name": "Noodles 745",
+        "price": 4590.91,
+        "stock": 89
+    },
+    {
+        "name": "Keyboard 746",
+        "price": 3976.03,
+        "stock": 94
+    },
+    {
+        "name": "Frying Pan 747",
+        "price": 4304.03,
+        "stock": 140
+    },
+    {
+        "name": "Eraser 748",
+        "price": 2453.33,
+        "stock": 133
+    },
+    {
+        "name": "Mug 749",
+        "price": 615.05,
+        "stock": 55
+    },
+    {
+        "name": "Hammer 750",
+        "price": 2820.61,
+        "stock": 77
+    },
+    {
+        "name": "Lunch Box 751",
+        "price": 3124.66,
+        "stock": 77
+    },
+    {
+        "name": "Keyboard 752",
+        "price": 546.91,
+        "stock": 189
+    },
+    {
+        "name": "Tape 753",
+        "price": 2784.89,
+        "stock": 66
+    },
+    {
+        "name": "Mug 754",
+        "price": 675.49,
+        "stock": 29
+    },
+    {
+        "name": "Napkins 755",
+        "price": 3336.76,
+        "stock": 160
+    },
+    {
+        "name": "Screwdriver 756",
+        "price": 3735.09,
+        "stock": 131
+    },
+    {
+        "name": "Cookies 757",
+        "price": 1048.78,
+        "stock": 193
+    },
+    {
+        "name": "Battery AA 758",
+        "price": 3938.04,
+        "stock": 98
+    },
+    {
+        "name": "Hammer 759",
+        "price": 4295.91,
+        "stock": 91
+    },
+    {
+        "name": "Face Cream 760",
+        "price": 4209.68,
+        "stock": 116
+    },
+    {
+        "name": "Mobile Charger 761",
+        "price": 4396.06,
+        "stock": 139
+    },
+    {
+        "name": "Tissues 762",
+        "price": 1041.18,
+        "stock": 87
+    },
+    {
+        "name": "Glue 763",
+        "price": 226.2,
+        "stock": 157
+    },
+    {
+        "name": "Handwash 764",
+        "price": 2266.46,
+        "stock": 78
+    },
+    {
+        "name": "Handwash 765",
+        "price": 70.23,
+        "stock": 41
+    },
+    {
+        "name": "Salt 766",
+        "price": 756.05,
+        "stock": 68
+    },
+    {
+        "name": "Pen 767",
+        "price": 2800.78,
+        "stock": 166
+    },
+    {
+        "name": "Keyboard 768",
+        "price": 2900.34,
+        "stock": 128
+    },
+    {
+        "name": "Hammer 769",
+        "price": 1273.4,
+        "stock": 154
+    },
+    {
+        "name": "Shaving Foam 770",
+        "price": 2421.8,
+        "stock": 20
+    },
+    {
+        "name": "Battery AAA 771",
+        "price": 152.08,
+        "stock": 5
+    },
+    {
+        "name": "Chips 772",
+        "price": 1402.76,
+        "stock": 160
+    },
+    {
+        "name": "Chips 773",
+        "price": 567.33,
+        "stock": 60
+    },
+    {
+        "name": "Biscuits 774",
+        "price": 3330.75,
+        "stock": 66
+    },
+    {
+        "name": "Mouse 775",
+        "price": 4962.54,
+        "stock": 166
+    },
+    {
+        "name": "Napkins 776",
+        "price": 1841.05,
+        "stock": 17
+    },
+    {
+        "name": "Brush 777",
+        "price": 3796.53,
+        "stock": 190
+    },
+    {
+        "name": "Chips 778",
+        "price": 3053.17,
+        "stock": 38
+    },
+    {
+        "name": "Soap Dish 779",
+        "price": 2895.88,
+        "stock": 82
+    },
+    {
+        "name": "Soap 780",
+        "price": 4966.15,
+        "stock": 164
+    },
+    {
+        "name": "Mobile Charger 781",
+        "price": 3764.07,
+        "stock": 37
+    },
+    {
+        "name": "Hair Oil 782",
+        "price": 3213.49,
+        "stock": 75
+    },
+    {
+        "name": "Hair Oil 783",
+        "price": 2858.59,
+        "stock": 56
+    },
+    {
+        "name": "Folders 784",
+        "price": 135.86,
+        "stock": 92
+    },
+    {
+        "name": "Face Cream 785",
+        "price": 633.99,
+        "stock": 198
+    },
+    {
+        "name": "Keyboard 786",
+        "price": 435.85,
+        "stock": 78
+    },
+    {
+        "name": "Napkins 787",
+        "price": 2133.54,
+        "stock": 12
+    },
+    {
+        "name": "Spoon Set 788",
+        "price": 1369.55,
+        "stock": 86
+    },
+    {
+        "name": "Charger Adapter 789",
+        "price": 4492.01,
+        "stock": 108
+    },
+    {
+        "name": "Notebook 790",
+        "price": 937.68,
+        "stock": 94
+    },
+    {
+        "name": "Chips 791",
+        "price": 4385.52,
+        "stock": 130
+    },
+    {
+        "name": "LED Torch 792",
+        "price": 1850.26,
+        "stock": 151
+    },
+    {
+        "name": "Soap 793",
+        "price": 1295.12,
+        "stock": 87
+    },
+    {
+        "name": "Face Cream 794",
+        "price": 2717.96,
+        "stock": 88
+    },
+    {
+        "name": "Extension Box 795",
+        "price": 2554.5,
+        "stock": 176
+    },
+    {
+        "name": "Detergent 796",
+        "price": 2938.79,
+        "stock": 140
+    },
+    {
+        "name": "Keyboard 797",
+        "price": 4285.94,
+        "stock": 168
+    },
+    {
+        "name": "Toothpaste 798",
+        "price": 1949.55,
+        "stock": 121
+    },
+    {
+        "name": "Shaving Foam 799",
+        "price": 3127.66,
+        "stock": 70
+    },
+    {
+        "name": "Cool Drink 800",
+        "price": 4414.55,
+        "stock": 120
+    },
+    {
+        "name": "Headphones 801",
+        "price": 2788.85,
+        "stock": 6
+    },
+    {
+        "name": "Body Lotion 802",
+        "price": 4669.6,
+        "stock": 151
+    },
+    {
+        "name": "Screwdriver 803",
+        "price": 2812.04,
+        "stock": 17
+    },
+    {
+        "name": "Soap Dish 804",
+        "price": 4759.43,
+        "stock": 183
+    },
+    {
+        "name": "Keyboard 805",
+        "price": 3225.99,
+        "stock": 93
+    },
+    {
+        "name": "Biscuits 806",
+        "price": 1290.61,
+        "stock": 130
+    },
+    {
+        "name": "Toothpaste 807",
+        "price": 4293.74,
+        "stock": 43
+    },
+    {
+        "name": "Soap 808",
+        "price": 1670.72,
+        "stock": 83
+    },
+    {
+        "name": "Knife 809",
+        "price": 3379.74,
+        "stock": 188
+    },
+    {
+        "name": "Bucket 810",
+        "price": 1706.33,
+        "stock": 14
+    },
+    {
+        "name": "Spices 811",
+        "price": 1353.41,
+        "stock": 79
+    },
+    {
+        "name": "Knife 812",
+        "price": 4431.88,
+        "stock": 166
+    },
+    {
+        "name": "Bucket 813",
+        "price": 4745.86,
+        "stock": 192
+    },
+    {
+        "name": "Pencil 814",
+        "price": 3884.3,
+        "stock": 136
+    },
+    {
+        "name": "Hair Oil 815",
+        "price": 2131.63,
+        "stock": 9
+    },
+    {
+        "name": "Spoon Set 816",
+        "price": 2679.46,
+        "stock": 108
+    },
+    {
+        "name": "Toothpaste 817",
+        "price": 1130.15,
+        "stock": 120
+    },
+    {
+        "name": "Markers 818",
+        "price": 2334.32,
+        "stock": 117
+    },
+    {
+        "name": "Mop 819",
+        "price": 3921.62,
+        "stock": 89
+    },
+    {
+        "name": "Handwash 820",
+        "price": 4171.28,
+        "stock": 176
+    },
+    {
+        "name": "Notebook 821",
+        "price": 2907.6,
+        "stock": 40
+    },
+    {
+        "name": "Brush 822",
+        "price": 3871.34,
+        "stock": 104
+    },
+    {
+        "name": "Tape 823",
+        "price": 1889.73,
+        "stock": 128
+    },
+    {
+        "name": "Spices 824",
+        "price": 1613.66,
+        "stock": 95
+    },
+    {
+        "name": "LED Torch 825",
+        "price": 4054.67,
+        "stock": 9
+    },
+    {
+        "name": "Salt 826",
+        "price": 2217.24,
+        "stock": 38
+    },
+    {
+        "name": "Knife 827",
+        "price": 3710.68,
+        "stock": 81
+    },
+    {
+        "name": "Hair Oil 828",
+        "price": 4229.16,
+        "stock": 24
+    },
+    {
+        "name": "Cables 829",
+        "price": 3245.71,
+        "stock": 194
+    },
+    {
+        "name": "Coffee 830",
+        "price": 1122.21,
+        "stock": 138
+    },
+    {
+        "name": "Tea Powder 831",
+        "price": 4092.16,
+        "stock": 186
+    },
+    {
+        "name": "Tea Powder 832",
+        "price": 3397.46,
+        "stock": 101
+    },
+    {
+        "name": "Mop 833",
+        "price": 1060.16,
+        "stock": 114
+    },
+    {
+        "name": "Notebook 834",
+        "price": 2328.44,
+        "stock": 171
+    },
+    {
+        "name": "Pen 835",
+        "price": 1774.64,
+        "stock": 194
+    },
+    {
+        "name": "Brush 836",
+        "price": 60.87,
+        "stock": 149
+    },
+    {
+        "name": "Oil 837",
+        "price": 2209.59,
+        "stock": 138
+    },
+    {
+        "name": "LED Bulb 838",
+        "price": 4626.98,
+        "stock": 181
+    },
+    {
+        "name": "Toothbrush 839",
+        "price": 2224.35,
+        "stock": 39
+    },
+    {
+        "name": "Face Cream 840",
+        "price": 4090.43,
+        "stock": 40
+    },
+    {
+        "name": "Rice 841",
+        "price": 628.03,
+        "stock": 144
+    },
+    {
+        "name": "Tape 842",
+        "price": 772.11,
+        "stock": 171
+    },
+    {
+        "name": "Juice 843",
+        "price": 2382.81,
+        "stock": 195
+    },
+    {
+        "name": "Tissues 844",
+        "price": 4364.59,
+        "stock": 168
+    },
+    {
+        "name": "Notebook 845",
+        "price": 417.36,
+        "stock": 111
+    },
+    {
+        "name": "Cables 846",
+        "price": 245.62,
+        "stock": 94
+    },
+    {
+        "name": "Broom 847",
+        "price": 1578.9,
+        "stock": 98
+    },
+    {
+        "name": "Shampoo 848",
+        "price": 546.64,
+        "stock": 30
+    },
+    {
+        "name": "USB Cable 849",
+        "price": 3175.72,
+        "stock": 25
+    },
+    {
+        "name": "Markers 850",
+        "price": 1249.37,
+        "stock": 182
+    },
+    {
+        "name": "Cables 851",
+        "price": 3129.32,
+        "stock": 179
+    },
+    {
+        "name": "Face Cream 852",
+        "price": 1973.08,
+        "stock": 150
+    },
+    {
+        "name": "Headphones 853",
+        "price": 2004.94,
+        "stock": 81
+    },
+    {
+        "name": "Water Bottle 854",
+        "price": 3570.29,
+        "stock": 91
+    },
+    {
+        "name": "USB Cable 855",
+        "price": 1286.33,
+        "stock": 146
+    },
+    {
+        "name": "Plate Set 856",
+        "price": 3982.49,
+        "stock": 133
+    },
+    {
+        "name": "Noodles 857",
+        "price": 4708.81,
+        "stock": 112
+    },
+    {
+        "name": "Frying Pan 858",
+        "price": 4849.79,
+        "stock": 115
+    },
+    {
+        "name": "Mouse 859",
+        "price": 2708.79,
+        "stock": 44
+    },
+    {
+        "name": "Notebook 860",
+        "price": 3056.76,
+        "stock": 107
+    },
+    {
+        "name": "Mug 861",
+        "price": 2468.31,
+        "stock": 141
+    },
+    {
+        "name": "Brush 862",
+        "price": 4152.53,
+        "stock": 172
+    },
+    {
+        "name": "Biscuits 863",
+        "price": 3749.75,
+        "stock": 44
+    },
+    {
+        "name": "Toothbrush 864",
+        "price": 4130.2,
+        "stock": 116
+    },
+    {
+        "name": "Tissues 865",
+        "price": 2401.61,
+        "stock": 190
+    },
+    {
+        "name": "Pen 866",
+        "price": 712.82,
+        "stock": 53
+    },
+    {
+        "name": "Electric Kettle 867",
+        "price": 1262.56,
+        "stock": 133
+    },
+    {
+        "name": "Sugar 868",
+        "price": 310.97,
+        "stock": 34
+    },
+    {
+        "name": "Glass Set 869",
+        "price": 2881.01,
+        "stock": 158
+    },
+    {
+        "name": "Salt 870",
+        "price": 3310.32,
+        "stock": 20
+    },
+    {
+        "name": "Soap 871",
+        "price": 4909.57,
+        "stock": 116
+    },
+    {
+        "name": "Bucket 872",
+        "price": 814.78,
+        "stock": 143
+    },
+    {
+        "name": "Keyboard 873",
+        "price": 1369.05,
+        "stock": 76
+    },
+    {
+        "name": "LED Torch 874",
+        "price": 1843.34,
+        "stock": 124
+    },
+    {
+        "name": "Napkins 875",
+        "price": 3513.87,
+        "stock": 140
+    },
+    {
+        "name": "Rice 876",
+        "price": 4332.34,
+        "stock": 142
+    },
+    {
+        "name": "Coffee 877",
+        "price": 2960.01,
+        "stock": 150
+    },
+    {
+        "name": "Shaving Foam 878",
+        "price": 4657.09,
+        "stock": 193
+    },
+    {
+        "name": "Glass Set 879",
+        "price": 1971.62,
+        "stock": 85
+    },
+    {
+        "name": "Mobile Charger 880",
+        "price": 164.51,
+        "stock": 38
+    },
+    {
+        "name": "Markers 881",
+        "price": 1295.48,
+        "stock": 103
+    },
+    {
+        "name": "Napkins 882",
+        "price": 1276.97,
+        "stock": 159
+    },
+    {
+        "name": "Screwdriver 883",
+        "price": 81.28,
+        "stock": 158
+    },
+    {
+        "name": "Pen 884",
+        "price": 3562.08,
+        "stock": 24
+    },
+    {
+        "name": "Eraser 885",
+        "price": 2772.26,
+        "stock": 71
+    },
+    {
+        "name": "Soap Dish 886",
+        "price": 1296.26,
+        "stock": 95
+    },
+    {
+        "name": "Hair Oil 887",
+        "price": 3981.82,
+        "stock": 107
+    },
+    {
+        "name": "Rice 888",
+        "price": 792.9,
+        "stock": 66
+    },
+    {
+        "name": "Shampoo 889",
+        "price": 330.81,
+        "stock": 9
+    },
+    {
+        "name": "Soap 890",
+        "price": 3065.99,
+        "stock": 131
+    },
+    {
+        "name": "Coffee 891",
+        "price": 826.23,
+        "stock": 124
+    },
+    {
+        "name": "Screwdriver 892",
+        "price": 3776.87,
+        "stock": 144
+    },
+    {
+        "name": "Body Lotion 893",
+        "price": 443.74,
+        "stock": 124
+    },
+    {
+        "name": "Mosquito Coil 894",
+        "price": 2168.88,
+        "stock": 199
+    },
+    {
+        "name": "USB Cable 895",
+        "price": 459.27,
+        "stock": 111
+    },
+    {
+        "name": "Noodles 896",
+        "price": 2960.84,
+        "stock": 42
+    },
+    {
+        "name": "Water Bottle 897",
+        "price": 2216.02,
+        "stock": 186
+    },
+    {
+        "name": "Lunch Box 898",
+        "price": 1768.36,
+        "stock": 86
+    },
+    {
+        "name": "Tea Powder 899",
+        "price": 1522.12,
+        "stock": 5
+    },
+    {
+        "name": "Shaving Foam 900",
+        "price": 500.84,
+        "stock": 21
+    },
+    {
+        "name": "Napkins 901",
+        "price": 2976.27,
+        "stock": 40
+    },
+    {
+        "name": "Bucket 902",
+        "price": 2399.0,
+        "stock": 43
+    },
+    {
+        "name": "Face Cream 903",
+        "price": 3483.67,
+        "stock": 5
+    },
+    {
+        "name": "Brush 904",
+        "price": 1464.64,
+        "stock": 136
+    },
+    {
+        "name": "Napkins 905",
+        "price": 3761.36,
+        "stock": 155
+    },
+    {
+        "name": "Juice 906",
+        "price": 35.43,
+        "stock": 100
+    },
+    {
+        "name": "Glass Set 907",
+        "price": 1434.02,
+        "stock": 38
+    },
+    {
+        "name": "Biscuits 908",
+        "price": 3818.18,
+        "stock": 157
+    },
+    {
+        "name": "Electric Kettle 909",
+        "price": 3076.78,
+        "stock": 137
+    },
+    {
+        "name": "Screwdriver 910",
+        "price": 2759.37,
+        "stock": 83
+    },
+    {
+        "name": "Frying Pan 911",
+        "price": 3624.17,
+        "stock": 43
+    },
+    {
+        "name": "Oil 912",
+        "price": 1054.86,
+        "stock": 108
+    },
+    {
+        "name": "LED Torch 913",
+        "price": 3150.88,
+        "stock": 167
+    },
+    {
+        "name": "Mosquito Coil 914",
+        "price": 4713.54,
+        "stock": 152
+    },
+    {
+        "name": "Toothpaste 915",
+        "price": 471.29,
+        "stock": 77
+    },
+    {
+        "name": "Detergent 916",
+        "price": 2991.87,
+        "stock": 32
+    },
+    {
+        "name": "Brush 917",
+        "price": 1193.46,
+        "stock": 173
+    },
+    {
+        "name": "Rice 918",
+        "price": 2314.51,
+        "stock": 48
+    },
+    {
+        "name": "Mug 919",
+        "price": 1588.15,
+        "stock": 65
+    },
+    {
+        "name": "Toothpaste 920",
+        "price": 4194.31,
+        "stock": 124
+    },
+    {
+        "name": "Hair Oil 921",
+        "price": 4554.84,
+        "stock": 61
+    },
+    {
+        "name": "Glue 922",
+        "price": 1232.14,
+        "stock": 105
+    },
+    {
+        "name": "Toothpaste 923",
+        "price": 788.23,
+        "stock": 66
+    },
+    {
+        "name": "Spices 924",
+        "price": 1636.18,
+        "stock": 170
+    },
+    {
+        "name": "Biscuits 925",
+        "price": 2783.48,
+        "stock": 32
+    },
+    {
+        "name": "Battery AA 926",
+        "price": 4967.13,
+        "stock": 194
+    },
+    {
+        "name": "LED Torch 927",
+        "price": 2120.02,
+        "stock": 133
+    },
+    {
+        "name": "Coffee 928",
+        "price": 1934.22,
+        "stock": 54
+    },
+    {
+        "name": "Pen 929",
+        "price": 1089.75,
+        "stock": 47
+    },
+    {
+        "name": "Napkins 930",
+        "price": 329.44,
+        "stock": 182
+    },
+    {
+        "name": "Folders 931",
+        "price": 4292.98,
+        "stock": 57
+    },
+    {
+        "name": "Handwash 932",
+        "price": 4753.75,
+        "stock": 154
+    },
+    {
+        "name": "Extension Box 933",
+        "price": 578.75,
+        "stock": 66
+    },
+    {
+        "name": "Plate Set 934",
+        "price": 2115.88,
+        "stock": 78
+    },
+    {
+        "name": "USB Cable 935",
+        "price": 1037.86,
+        "stock": 141
+    },
+    {
+        "name": "Mobile Charger 936",
+        "price": 665.41,
+        "stock": 129
+    },
+    {
+        "name": "Cookies 937",
+        "price": 4238.72,
+        "stock": 23
+    },
+    {
+        "name": "Cookies 938",
+        "price": 4647.78,
+        "stock": 69
+    },
+    {
+        "name": "Shaving Foam 939",
+        "price": 273.19,
+        "stock": 194
+    },
+    {
+        "name": "LED Torch 940",
+        "price": 263.82,
+        "stock": 161
+    },
+    {
+        "name": "Coffee 941",
+        "price": 1780.24,
+        "stock": 124
+    },
+    {
+        "name": "Brush 942",
+        "price": 3739.16,
+        "stock": 126
+    },
+    {
+        "name": "Tea Powder 943",
+        "price": 1002.68,
+        "stock": 85
+    },
+    {
+        "name": "Glue 944",
+        "price": 2081.47,
+        "stock": 170
+    },
+    {
+        "name": "Mug 945",
+        "price": 1544.87,
+        "stock": 148
+    },
+    {
+        "name": "Mouse 946",
+        "price": 3872.82,
+        "stock": 125
+    },
+    {
+        "name": "LED Torch 947",
+        "price": 3822.94,
+        "stock": 37
+    },
+    {
+        "name": "Biscuits 948",
+        "price": 2038.0,
+        "stock": 132
+    },
+    {
+        "name": "Face Cream 949",
+        "price": 776.02,
+        "stock": 63
+    },
+    {
+        "name": "Biscuits 950",
+        "price": 2166.69,
+        "stock": 78
+    },
+    {
+        "name": "Tea Powder 951",
+        "price": 372.83,
+        "stock": 167
+    },
+    {
+        "name": "Pencil 952",
+        "price": 831.56,
+        "stock": 186
+    },
+    {
+        "name": "USB Cable 953",
+        "price": 2586.38,
+        "stock": 42
+    },
+    {
+        "name": "Mosquito Coil 954",
+        "price": 1464.82,
+        "stock": 14
+    },
+    {
+        "name": "Keyboard 955",
+        "price": 1805.3,
+        "stock": 156
+    },
+    {
+        "name": "Charger Adapter 956",
+        "price": 2846.8,
+        "stock": 35
+    },
+    {
+        "name": "Water Bottle 957",
+        "price": 3513.23,
+        "stock": 190
+    },
+    {
+        "name": "Lunch Box 958",
+        "price": 3034.84,
+        "stock": 163
+    },
+    {
+        "name": "Salt 959",
+        "price": 50.6,
+        "stock": 38
+    },
+    {
+        "name": "Hair Oil 960",
+        "price": 643.24,
+        "stock": 178
+    },
+    {
+        "name": "Toothpaste 961",
+        "price": 1847.37,
+        "stock": 68
+    },
+    {
+        "name": "Keyboard 962",
+        "price": 3494.87,
+        "stock": 198
+    },
+    {
+        "name": "Brush 963",
+        "price": 3537.89,
+        "stock": 105
+    },
+    {
+        "name": "Eraser 964",
+        "price": 4201.32,
+        "stock": 119
+    },
+    {
+        "name": "Oil 965",
+        "price": 1214.31,
+        "stock": 50
+    },
+    {
+        "name": "Glue 966",
+        "price": 2282.61,
+        "stock": 56
+    },
+    {
+        "name": "Headphones 967",
+        "price": 688.58,
+        "stock": 132
+    },
+    {
+        "name": "Oil 968",
+        "price": 3300.32,
+        "stock": 150
+    },
+    {
+        "name": "Cables 969",
+        "price": 3386.43,
+        "stock": 196
+    },
+    {
+        "name": "Milk Powder 970",
+        "price": 4592.86,
+        "stock": 161
+    },
+    {
+        "name": "Mobile Charger 971",
+        "price": 1397.99,
+        "stock": 172
+    },
+    {
+        "name": "Screwdriver 972",
+        "price": 345.1,
+        "stock": 15
+    },
+    {
+        "name": "Rice 973",
+        "price": 4832.39,
+        "stock": 187
+    },
+    {
+        "name": "Toothpaste 974",
+        "price": 35.05,
+        "stock": 52
+    },
+    {
+        "name": "Shaving Foam 975",
+        "price": 1094.01,
+        "stock": 6
+    },
+    {
+        "name": "Extension Box 976",
+        "price": 2572.16,
+        "stock": 186
+    },
+    {
+        "name": "Mosquito Coil 977",
+        "price": 4568.5,
+        "stock": 63
+    },
+    {
+        "name": "Mug 978",
+        "price": 4772.28,
+        "stock": 18
+    },
+    {
+        "name": "Extension Box 979",
+        "price": 3520.67,
+        "stock": 198
+    },
+    {
+        "name": "Broom 980",
+        "price": 3212.43,
+        "stock": 114
+    },
+    {
+        "name": "Cool Drink 981",
+        "price": 1088.57,
+        "stock": 131
+    },
+    {
+        "name": "Keyboard 982",
+        "price": 1601.18,
+        "stock": 81
+    },
+    {
+        "name": "Mobile Charger 983",
+        "price": 2805.74,
+        "stock": 29
+    },
+    {
+        "name": "Cookies 984",
+        "price": 2027.1,
+        "stock": 52
+    },
+    {
+        "name": "Shampoo 985",
+        "price": 1823.64,
+        "stock": 124
+    },
+    {
+        "name": "Face Cream 986",
+        "price": 2829.74,
+        "stock": 16
+    },
+    {
+        "name": "Extension Box 987",
+        "price": 3710.92,
+        "stock": 126
+    },
+    {
+        "name": "Water Bottle 988",
+        "price": 3658.02,
+        "stock": 15
+    },
+    {
+        "name": "Biscuits 989",
+        "price": 280.13,
+        "stock": 46
+    },
+    {
+        "name": "Water Bottle 990",
+        "price": 2630.44,
+        "stock": 129
+    },
+    {
+        "name": "Knife 991",
+        "price": 3500.25,
+        "stock": 111
+    },
+    {
+        "name": "Biscuits 992",
+        "price": 3453.89,
+        "stock": 53
+    },
+    {
+        "name": "Napkins 993",
+        "price": 979.75,
+        "stock": 149
+    },
+    {
+        "name": "Brush 994",
+        "price": 3542.79,
+        "stock": 9
+    },
+    {
+        "name": "Headphones 995",
+        "price": 308.29,
+        "stock": 128
+    },
+    {
+        "name": "Tissues 996",
+        "price": 3255.27,
+        "stock": 87
+    },
+    {
+        "name": "Pencil 997",
+        "price": 3738.2,
+        "stock": 85
+    },
+    {
+        "name": "Tea Powder 998",
+        "price": 3498.29,
+        "stock": 58
+    },
+    {
+        "name": "Handwash 999",
+        "price": 1770.42,
+        "stock": 125
+    },
+    {
+        "name": "Juice 1000",
+        "price": 2591.94,
+        "stock": 156
+    }
+]

@@ -1,0 +1,259 @@
+{% extends "base.html" %}
+
+{% block title %}Invoices - Shop Billing System{% endblock %}
+{% block page_title %}Invoice History{% endblock %}
+
+{% block content %}
+<style>
+  :root {
+    --primary: #4361ee;
+    --primary-dark: #3046d3;
+    --success: #198754;
+    --info: #0dcaf0;
+    --warning: #fbbc04;
+    --danger: #dc3545;
+    --card: #ffffff;
+    --border: #e5e7eb;
+    --text: #111827;
+    --muted: #6b7280;
+    --bg: #f4f7fb;
+  }
+
+  body {
+    background: linear-gradient(180deg, #f7faff, #eef3ff) !important;
+  }
+
+  .invoice-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+  }
+
+  .invoice-header {
+    background: linear-gradient(90deg, var(--info), #38bdf8);
+    color: #fff;
+    padding: 1rem 1.25rem;
+  }
+
+  .invoice-header h6 {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+  }
+
+  .create-btn {
+    border-radius: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .table-wrap {
+    padding: 1rem;
+  }
+
+  .table {
+    margin-bottom: 0;
+    color: var(--text);
+  }
+
+  .table thead th {
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border-color: #dbe3ff;
+    font-size: 0.95rem;
+  }
+
+  .table tbody td {
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .bill-no {
+    font-weight: 700;
+    color: var(--primary-dark);
+  }
+
+  .amount-strong {
+    font-weight: 700;
+    color: #111827;
+  }
+
+  .payment-badge {
+    font-size: 0.8rem;
+    padding: 0.45rem 0.7rem;
+    border-radius: 999px;
+  }
+
+  .btn-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+
+  .btn-actions .btn {
+    border-radius: 10px;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .empty-state {
+    padding: 2.5rem 1rem;
+    color: var(--muted);
+  }
+
+  .empty-state i {
+    color: var(--primary);
+    opacity: 0.8;
+  }
+
+  @media (max-width: 992px) {
+    .invoice-header {
+      gap: 0.75rem;
+    }
+
+    .btn-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .btn-actions .btn {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .invoice-header {
+      display: flex !important;
+      flex-direction: column;
+      align-items: stretch !important;
+    }
+
+    .invoice-header h6 {
+      font-size: 1rem;
+    }
+
+    .create-btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .table-wrap {
+      padding: 0.5rem;
+    }
+
+    .table {
+      min-width: 980px;
+    }
+  }
+</style>
+
+<div class="row">
+  <div class="col-12">
+    <div class="invoice-card">
+      <div class="invoice-header d-flex justify-content-between align-items-center">
+        <h6>
+          <i class="fas fa-file-invoice me-1"></i> All Invoices
+        </h6>
+        <a href="{{ url_for('billing.billing') }}" class="btn btn-light btn-sm create-btn">
+          <i class="fas fa-plus me-1"></i> Create New Bill
+        </a>
+      </div>
+
+      <div class="card-body p-0">
+        <div class="table-wrap">
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover table-striped align-middle">
+              <thead>
+                <tr>
+                  <th>Bill Number</th>
+                  <th>Customer</th>
+                  <th>Subtotal (₹)</th>
+                  <th>GST (₹)</th>
+                  <th>Final Amount (₹)</th>
+                  <th>Payment Method</th>
+                  <th>Date & Time</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                {% for invoice in invoices %}
+                  {% set bill_id = invoice.id if invoice is mapping else invoice[0] %}
+                  {% set bill_number = invoice.bill_number if invoice is mapping else invoice[1] %}
+                  {% set customer_name = (invoice.customer_name if invoice is mapping else invoice[2]) or 'Walk-in Customer' %}
+                  {% set subtotal = (invoice.total_amount if invoice is mapping else invoice[3]) | float %}
+                  {% set gst_amount = (invoice.gst_amount if invoice is mapping else invoice[4]) | float %}
+                  {% set final_amount = (invoice.final_amount if invoice is mapping else invoice[5]) | float %}
+                  {% set payment_method = invoice.payment_method if invoice is mapping else invoice[6] %}
+                  {% set created_at = invoice.created_at if invoice is mapping else invoice[7] %}
+
+                  <tr>
+                    <td><span class="bill-no">{{ bill_number }}</span></td>
+
+                    <td>{{ customer_name }}</td>
+
+                    <td>₹{{ "%.2f"|format(subtotal) }}</td>
+
+                    <td>₹{{ "%.2f"|format(gst_amount) }}</td>
+
+                    <td><span class="amount-strong">₹{{ "%.2f"|format(final_amount) }}</span></td>
+
+                    <td>
+                      {% if payment_method == 'Cash' %}
+                        <span class="badge bg-secondary payment-badge">Cash</span>
+                      {% elif payment_method == 'Card' %}
+                        <span class="badge bg-primary payment-badge">Card</span>
+                      {% elif payment_method == 'UPI' %}
+                        <span class="badge bg-success payment-badge">UPI</span>
+                      {% else %}
+                        <span class="badge bg-warning text-dark payment-badge">Pending</span>
+                      {% endif %}
+                    </td>
+
+                    <td>
+                      {{ created_at.strftime('%Y-%m-%d %H:%M') if created_at else 'N/A' }}
+                    </td>
+
+                    <td>
+                      <div class="btn-actions">
+                        <a href="{{ url_for('invoices.invoice_detail', bill_id=bill_id) }}"
+                           class="btn btn-info btn-sm text-white">
+                          <i class="fas fa-eye"></i> View
+                        </a>
+                        <a href="{{ url_for('invoices.generate_pdf', bill_id=bill_id) }}"
+                           class="btn btn-success btn-sm text-white">
+                          <i class="fas fa-download"></i> PDF
+                        </a>
+                        <a href="{{ url_for('invoices.print_invoice', bill_id=bill_id) }}"
+                           class="btn btn-dark btn-sm text-white" target="_blank">
+                          <i class="fas fa-print"></i> Print
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                {% else %}
+                  <tr>
+                    <td colspan="8" class="text-center text-muted py-4">
+                      <div class="empty-state">
+                        <i class="fas fa-file-invoice fa-2x mb-3"></i><br>
+                        No invoices found.
+                        <a href="{{ url_for('billing.billing') }}">Create your first bill</a>
+                      </div>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

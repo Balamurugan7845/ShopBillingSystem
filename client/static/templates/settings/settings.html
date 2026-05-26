@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block title %}Settings{% endblock %}
+{% block page_title %}Settings{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+
+    <div class="card shadow-sm p-4">
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs mb-4" id="settingsTabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#profileTab">
+                    <i class="fas fa-user"></i> Profile
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#passwordTab">
+                    <i class="fas fa-lock"></i> Change Password
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#accountTab">
+                    <i class="fas fa-info-circle"></i> Account Information
+                </a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+
+            <!-- Profile Tab -->
+            <div class="tab-pane fade show active" id="profileTab">
+                <h5 class="mb-3">Update Profile Information</h5>
+
+                <form method="POST" action="{{ url_for('auth.update_profile') }}">
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" name="full_name"
+                                   value="{{ user.username }}">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" value="admin@gmail.com" disabled>
+                            <small class="text-muted">Email cannot be changed</small>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" name="phone" placeholder="9876543210">
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-3">Update Profile</button>
+                </form>
+            </div>
+
+            <!-- Change Password Tab -->
+            <div class="tab-pane fade" id="passwordTab">
+                <h5 class="mb-3">Change Password</h5>
+
+                <form method="POST" action="{{ url_for('auth.change_password') }}">
+                    <div class="mb-3">
+                        <label class="form-label">Current Password</label>
+                        <input type="password" class="form-control" name="current_password">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">New Password</label>
+                        <input type="password" class="form-control" name="new_password">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Confirm New Password</label>
+                        <input type="password" class="form-control" name="confirm_password">
+                    </div>
+
+                    <button type="submit" class="btn btn-warning">Change Password</button>
+                </form>
+            </div>
+
+            <!-- Account Information Tab -->
+            <div class="tab-pane fade" id="accountTab">
+                <h5 class="mb-3">Account Information</h5>
+
+                <p><strong>User ID:</strong> {{ user.id }}</p>
+                <p><strong>Username:</strong> {{ user.username }}</p>
+
+                <p><strong>Email:</strong> admin@gmail.com</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

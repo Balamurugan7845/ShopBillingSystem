@@ -1,0 +1,474 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Shop Billing System{% endblock %}
+{% block page_title %}Dashboard{% endblock %}
+
+{% block content %}
+<style>
+  :root {
+    --primary: #4361ee;
+    --primary-dark: #3f37c9;
+    --success: #198754;
+    --info: #0dcaf0;
+    --warning: #fbbc04;
+    --danger: #dc3545;
+    --card: #ffffff;
+    --border: #e5e7eb;
+    --text: #111827;
+    --muted: #6b7280;
+    --bg: #f4f7fb;
+  }
+
+  body {
+    background: linear-gradient(180deg, #f7faff, #eef3ff) !important;
+  }
+
+  .dashboard-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+  }
+
+  .stats-card {
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .stats-card .card-body {
+    padding: 1.2rem;
+  }
+
+  .stats-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.45rem;
+  }
+
+  .stats-value {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.2;
+  }
+
+  .stats-icon {
+    font-size: 2.2rem;
+    opacity: 0.95;
+  }
+
+  .border-left-primary {
+    border-left: 5px solid var(--primary) !important;
+  }
+
+  .border-left-success {
+    border-left: 5px solid var(--success) !important;
+  }
+
+  .border-left-info {
+    border-left: 5px solid var(--info) !important;
+  }
+
+  .border-left-warning {
+    border-left: 5px solid var(--warning) !important;
+  }
+
+  .section-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .section-header {
+    padding: 0.95rem 1.2rem;
+    color: #fff;
+  }
+
+  .section-header h6 {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+  }
+
+  .bg-premium-success {
+    background: linear-gradient(90deg, #198754, #21a366);
+  }
+
+  .bg-premium-warning {
+    background: linear-gradient(90deg, #f4b400, #fbbc04);
+    color: #111827 !important;
+  }
+
+  .bg-premium-primary {
+    background: linear-gradient(90deg, #4361ee, #5a74f1);
+  }
+
+  .chart-body {
+    padding: 1rem;
+  }
+
+  .chart-container {
+    position: relative;
+    width: 100%;
+    height: 320px;
+  }
+
+  .chart-empty {
+    text-align: center;
+    color: var(--muted);
+    padding-top: 1rem;
+  }
+
+  .recent-table-wrap {
+    padding: 1rem;
+  }
+
+  .recent-table {
+    margin-bottom: 0;
+  }
+
+  .recent-table thead th {
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .recent-table tbody td {
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  .bill-amount {
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .empty-state {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: var(--muted);
+  }
+
+  .empty-state i {
+    color: var(--primary);
+    opacity: 0.8;
+  }
+
+  @media (max-width: 992px) {
+    .stats-value {
+      font-size: 1.25rem;
+    }
+
+    .stats-icon {
+      font-size: 1.8rem;
+    }
+
+    .chart-container {
+      height: 280px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .stats-card .card-body {
+      padding: 1rem;
+    }
+
+    .stats-title {
+      font-size: 0.72rem;
+    }
+
+    .stats-value {
+      font-size: 1.1rem;
+    }
+
+    .stats-icon {
+      font-size: 1.5rem;
+    }
+
+    .section-header {
+      padding: 0.85rem 1rem;
+    }
+
+    .chart-body,
+    .recent-table-wrap {
+      padding: 0.75rem;
+    }
+
+    .chart-container {
+      height: 240px;
+    }
+
+    .recent-table {
+      min-width: 760px;
+    }
+  }
+</style>
+
+<div class="row">
+  <div class="col-xl-3 col-md-6 mb-4">
+    <div class="stats-card border-left-primary">
+      <div class="card-body">
+        <div class="row align-items-center g-0">
+          <div class="col me-2">
+            <div class="stats-title text-primary">Today's Sales</div>
+            <div class="stats-value">₹{{ "%.2f"|format(today_sales) }}</div>
+          </div>
+          <div class="col-auto">
+            <i class="fas fa-rupee-sign stats-icon text-success"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-md-6 mb-4">
+    <div class="stats-card border-left-success">
+      <div class="card-body">
+        <div class="row align-items-center g-0">
+          <div class="col me-2">
+            <div class="stats-title text-success">Monthly Sales</div>
+            <div class="stats-value">₹{{ "%.2f"|format(monthly_sales) }}</div>
+          </div>
+          <div class="col-auto">
+            <i class="fas fa-chart-line stats-icon text-primary"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-md-6 mb-4">
+    <div class="stats-card border-left-info">
+      <div class="card-body">
+        <div class="row align-items-center g-0">
+          <div class="col me-2">
+            <div class="stats-title text-info">Total Products</div>
+            <div class="stats-value">{{ total_products }}</div>
+          </div>
+          <div class="col-auto">
+            <i class="fas fa-box stats-icon text-warning"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-md-6 mb-4">
+    <div class="stats-card border-left-warning">
+      <div class="card-body">
+        <div class="row align-items-center g-0">
+          <div class="col me-2">
+            <div class="stats-title text-warning">Total Bills</div>
+            <div class="stats-value">{{ total_bills }}</div>
+          </div>
+          <div class="col-auto">
+            <i class="fas fa-users stats-icon text-info"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-2">
+  <div class="col-xl-8 col-md-12 mb-4">
+    <div class="section-card">
+      <div class="section-header bg-premium-success">
+        <h6><i class="fas fa-chart-line me-1"></i> Weekly Sales (Last 7 Days)</h6>
+      </div>
+      <div class="chart-body">
+        <div class="chart-container">
+          <canvas id="salesChart"></canvas>
+        </div>
+        {% if sales|sum == 0 %}
+        <div class="chart-empty">
+          <i class="fas fa-info-circle me-1"></i> No sales data available for the last 7 days.
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-4 col-md-12 mb-4">
+    <div class="section-card">
+      <div class="section-header bg-premium-warning">
+        <h6><i class="fas fa-box me-1"></i> Top Product Stock Availability</h6>
+      </div>
+      <div class="chart-body">
+        <div class="chart-container">
+          <canvas id="stockChart"></canvas>
+        </div>
+        {% if not stock_labels %}
+        <div class="chart-empty">
+          <i class="fas fa-info-circle me-1"></i> No products available.
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-2">
+  <div class="col-12">
+    <div class="section-card">
+      <div class="section-header bg-premium-primary">
+        <h6><i class="fas fa-receipt me-1"></i> Recent Bills</h6>
+      </div>
+      <div class="recent-table-wrap">
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover recent-table">
+            <thead class="table-light">
+              <tr>
+                <th>Bill Number</th>
+                <th>Customer</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for bill in recent_bills %}
+              <tr>
+                <td>{{ bill[1] }}</td>
+                <td>{{ bill[2] or 'Walk-in Customer' }}</td>
+                <td class="bill-amount">₹{{ "%.2f"|format(bill[3]) }}</td>
+                <td>{{ bill[4].strftime('%Y-%m-%d %H:%M') if bill[4] else 'N/A' }}</td>
+                <td>
+                  <a href="{{ url_for('invoices.invoice_detail', bill_id=bill[0]) }}" class="btn btn-sm btn-info text-white">
+                    <i class="fas fa-eye"></i> View
+                  </a>
+                </td>
+              </tr>
+              {% else %}
+              <tr>
+                <td colspan="5">
+                  <div class="empty-state">
+                    <i class="fas fa-receipt fa-2x mb-3"></i><br>
+                    No recent bills found.
+                  </div>
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const labels = {{ labels|tojson }};
+  const sales = {{ sales|tojson }};
+  const stockLabels = {{ stock_labels|tojson }};
+  const stockValues = {{ stock_values|tojson }};
+
+  const salesCanvas = document.getElementById('salesChart');
+  if (salesCanvas) {
+    const salesCtx = salesCanvas.getContext('2d');
+    new Chart(salesCtx, {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Sales (₹)',
+          data: sales,
+          borderColor: '#4361ee',
+          backgroundColor: 'rgba(67, 97, 238, 0.10)',
+          borderWidth: 3,
+          tension: 0.35,
+          fill: true,
+          pointBackgroundColor: '#4361ee',
+          pointBorderColor: '#ffffff',
+          pointBorderWidth: 2,
+          pointRadius: 4,
+          pointHoverRadius: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return '₹' + Number(context.parsed.y || 0).toFixed(2);
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              callback: function(value) {
+                return '₹' + value;
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+
+  const stockCanvas = document.getElementById('stockChart');
+  if (stockCanvas && stockLabels.length && stockValues.length) {
+    const stockCtx = stockCanvas.getContext('2d');
+    new Chart(stockCtx, {
+      type: 'pie',
+      data: {
+        labels: stockLabels,
+        datasets: [{
+          data: stockValues,
+          backgroundColor: [
+            '#4361ee', '#3f37c9', '#4cc9f0', '#f72585', '#e63946',
+            '#4895ef', '#f39c12', '#27ae60', '#9c88ff', '#00b894'
+          ],
+          borderWidth: 1,
+          borderColor: '#ffffff'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              boxWidth: 12,
+              padding: 15
+            }
+          },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                const label = context.label || '';
+                const value = context.parsed || 0;
+                const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                const percentage = total ? ((value / total) * 100).toFixed(1) : 0;
+                return `${label}: ${value} units (${percentage}%)`;
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+</script>
+{% endblock %}
