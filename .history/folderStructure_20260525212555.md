@@ -1,1 +1,0 @@
-mysql -u root -p shop_billing_db < database/schema.sql
