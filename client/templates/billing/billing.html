@@ -167,12 +167,31 @@
       <div class="row g-3">
         <div class="col-md-6 col-lg-4">
           <label class="form-label">Customer</label>
-          <select id="customerSelect" class="form-select">
-            <option value="">Walk-in Customer</option>
-            {% for customer in customers %}
-            <option value="{{ customer[0] }}">{{ customer[1] }} — {{ customer[2] }}</option>
-            {% endfor %}
-          </select>
+          <select id="customerSelect" name="customer_id" class="form-select">
+
+    <option value="">
+        Walk-in Customer
+    </option>
+
+    {% for customer in customers %}
+
+        {% if customer['name'] %}
+
+            <option value="{{ customer['id'] }}">
+
+                {{ customer['name'] }}
+
+                {% if customer['phone'] %}
+                    - {{ customer['phone'] }}
+                {% endif %}
+
+            </option>
+
+        {% endif %}
+
+    {% endfor %}
+
+</select>
         </div>
         <div class="col-md-3 col-lg-2">
           <label class="form-label">Payment Method</label>
@@ -458,18 +477,42 @@ function plain(t) {
 }
 
 function buildPayload(items) {
+
+  const customerEl = document.getElementById('customer');
+
   return {
-    customer_id: document.getElementById('customerSelect').value,
+
+    customer_id: customerEl
+      ? customerEl.value
+      : "",
+
     payment_method: document.getElementById('paymentMethod').value,
+
     discount_type: document.getElementById('discountType').value,
-    discount_value: parseFloat(document.getElementById('discountValue').value) || 0,
+
+    discount_value:
+      parseFloat(document.getElementById('discountValue').value) || 0,
+
     gst_type: document.getElementById('gstType').value,
-    subtotal: plain(document.getElementById('subtotal').innerText),
-    discount_amount: plain(document.getElementById('discountAmount').innerText),
-    cgst: plain(document.getElementById('cgst').innerText),
-    sgst: plain(document.getElementById('sgst').innerText),
-    igst: plain(document.getElementById('igst').innerText),
-    final_total: plain(document.getElementById('finalTotal').innerText),
+
+    subtotal:
+      plain(document.getElementById('subtotal').innerText),
+
+    discount_amount:
+      plain(document.getElementById('discountAmount').innerText),
+
+    cgst:
+      plain(document.getElementById('cgst').innerText),
+
+    sgst:
+      plain(document.getElementById('sgst').innerText),
+
+    igst:
+      plain(document.getElementById('igst').innerText),
+
+    final_total:
+      plain(document.getElementById('finalTotal').innerText),
+
     items
   };
 }

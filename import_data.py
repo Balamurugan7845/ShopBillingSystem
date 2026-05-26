@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Script to import JSON data into the database
-Run this after setting up the database: python import_data.py
-"""
-
 import json
 import os
 import MySQLdb

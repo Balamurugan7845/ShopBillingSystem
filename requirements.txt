@@ -6,7 +6,7 @@ Werkzeug==2.3.7
 reportlab==4.0.4
 pymysql==1.1.0
 cryptography==41.0.7
-pandas==2.2.2
-openpyxl==3.1.2
+pandas
+openpyxl
 python-dotenv==1.0.1
 Pillow==10.3.0

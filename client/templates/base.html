@@ -1,509 +1,471 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>
-        {% block title %}
-            Shop Billing System
-        {% endblock %}
-    </title>
+    <title>{% block title %} Shop Billing System {% endblock %}</title>
 
     <!-- =========================
          BOOTSTRAP 5
     ========================== -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- FONT AWESOME -->
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
     <!-- CUSTOM CSS -->
 
-    <link rel="stylesheet"
-          href="{{ url_for('static', filename='css/style.css') }}">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
 
     <style>
+      body {
+        background: #f4f7fb;
+        overflow-x: hidden;
+        font-family: "Segoe UI", sans-serif;
+      }
 
-        body{
-            background:#f4f7fb;
-            overflow-x:hidden;
-            font-family:'Segoe UI',sans-serif;
-        }
+      /* =========================
+   SIDEBAR PROFILE
+========================= */
 
-        /* =========================
-           SIDEBAR
-        ========================== */
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+      }
 
-        .sidebar{
-            position:fixed;
-            top:0;
-            left:0;
-            width:260px;
-            height:100vh;
-            background:linear-gradient(180deg,#4361ee,#3046d3);
-            color:white;
-            z-index:1000;
-            overflow-y:auto;
-            transition:.3s;
-        }
+      .sidebar-nav {
+        flex: 1;
+      }
 
-        .sidebar-brand{
-            padding:1.2rem 1rem;
-            text-align:center;
-            border-bottom:1px solid rgba(255,255,255,.15);
-        }
+      .sidebar-profile {
+        margin-top: auto;
+        padding: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(10px);
+      }
 
-        .sidebar-brand h3{
-            margin:0;
-            font-size:1.3rem;
-            font-weight:700;
-        }
+      .sidebar-profile-card {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        padding: 0.9rem;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.1);
+        transition: 0.25s;
+      }
 
-        .sidebar-nav{
-            list-style:none;
-            padding:0;
-            margin:0;
-        }
+      .sidebar-profile-card:hover {
+        background: rgba(255, 255, 255, 0.16);
+      }
 
-        .sidebar-nav li{
-            width:100%;
-        }
+      .sidebar-profile-avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: white;
+        color: #4361ee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        flex-shrink: 0;
+      }
 
-        .sidebar-nav a{
-            display:flex;
-            align-items:center;
-            gap:.8rem;
-            color:white;
-            text-decoration:none;
-            padding:1rem 1.2rem;
-            transition:.2s;
-            font-size:.95rem;
-        }
+      .sidebar-profile-info {
+        overflow: hidden;
+      }
 
-        .sidebar-nav a:hover{
-            background:rgba(255,255,255,.15);
-        }
+      .sidebar-profile-name {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: white;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
 
-        .sidebar-nav a.active{
-            background:white;
-            color:#4361ee;
-            font-weight:600;
-        }
+      .sidebar-profile-role {
+        font-size: 0.78rem;
+        color: rgba(255, 255, 255, 0.75);
+        margin-top: 2px;
+      }
 
-        .sidebar-nav i{
-            width:20px;
-            text-align:center;
-        }
+      .sidebar-profile-actions {
+        margin-top: 0.8rem;
+        display: flex;
+        gap: 0.5rem;
+      }
 
-        /* =========================
+      .sidebar-profile-actions a {
+        flex: 1;
+        text-align: center;
+        text-decoration: none;
+        font-size: 0.82rem;
+        padding: 0.45rem 0.6rem;
+        border-radius: 10px;
+        transition: 0.2s;
+      }
+
+      .profile-btn {
+        background: white;
+        color: #4361ee;
+        font-weight: 600;
+      }
+
+      .profile-btn:hover {
+        background: #edf2ff;
+      }
+
+      .logout-btn {
+        background: #ef4444;
+        color: white;
+        font-weight: 600;
+      }
+
+      .logout-btn:hover {
+        background: #dc2626;
+      }
+
+      /* =========================
            MAIN CONTENT
         ========================== */
 
-        .main-content{
-            margin-left:260px;
-            min-height:100vh;
-            padding:1.2rem;
-            transition:.3s;
-        }
+      .main-content {
+        margin-left: 260px;
+        min-height: 100vh;
+        padding: 1.2rem;
+        transition: 0.3s;
+      }
 
-        /* =========================
+      /* =========================
            NAVBAR
         ========================== */
 
-        .navbar{
-            background:white;
-            border-radius:16px;
-            padding:1rem 1.2rem;
-            margin-bottom:1.2rem;
-            box-shadow:0 4px 12px rgba(0,0,0,.05);
-        }
+      .navbar {
+        background: white;
+        border-radius: 16px;
+        padding: 1rem 1.2rem;
+        margin-bottom: 1.2rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
 
-        .navbar-brand{
-            font-weight:700;
-            color:#111827;
-        }
+      .navbar-brand {
+        font-weight: 700;
+        color: #111827;
+      }
 
-        /* =========================
+      /* =========================
            ALERT
         ========================== */
 
-        .alert{
-            border:none;
-            border-radius:12px;
-        }
+      .alert {
+        border: none;
+        border-radius: 12px;
+      }
 
-        /* =========================
+      /* =========================
            MOBILE TOGGLE
         ========================== */
 
-        .mobile-toggle{
-            display:none;
-            background:#4361ee;
-            color:white;
-            border:none;
-            width:42px;
-            height:42px;
-            border-radius:10px;
-        }
+      .mobile-toggle {
+        display: none;
+        background: #4361ee;
+        color: white;
+        border: none;
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+      }
 
-        /* =========================
+      /* =========================
            OVERLAY
         ========================== */
 
-        .sidebar-overlay{
-            display:none;
-            position:fixed;
-            inset:0;
-            background:rgba(0,0,0,.45);
-            z-index:999;
-        }
+      .sidebar-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 999;
+      }
 
-        .sidebar-overlay.active{
-            display:block;
-        }
+      .sidebar-overlay.active {
+        display: block;
+      }
 
-        /* =========================
+      /* =========================
            RESPONSIVE
         ========================== */
 
-        @media(max-width:992px){
-
-            .sidebar{
-                left:-260px;
-            }
-
-            .sidebar.active{
-                left:0;
-            }
-
-            .main-content{
-                margin-left:0;
-                padding:1rem;
-            }
-
-            .mobile-toggle{
-                display:flex;
-                align-items:center;
-                justify-content:center;
-            }
-
-            .navbar{
-                padding:.9rem 1rem;
-            }
+      @media (max-width: 992px) {
+        .sidebar {
+          left: -260px;
         }
 
-        @media(max-width:576px){
-
-            .main-content{
-                padding:.75rem;
-            }
-
-            .navbar{
-                border-radius:12px;
-            }
-
-            .navbar-brand{
-                font-size:1rem;
-            }
-
-            .sidebar{
-                width:240px;
-            }
+        .sidebar.active {
+          left: 0;
         }
 
+        .main-content {
+          margin-left: 0;
+          padding: 1rem;
+        }
+
+        .mobile-toggle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .navbar {
+          padding: 0.9rem 1rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .main-content {
+          padding: 0.75rem;
+        }
+
+        .navbar {
+          border-radius: 12px;
+        }
+
+        .navbar-brand {
+          font-size: 1rem;
+        }
+
+        .sidebar {
+          width: 240px;
+        }
+      }
     </style>
+  </head>
 
-</head>
+  <body>
+    {% if current_user.is_authenticated %}
 
-<body>
-
-{% if current_user.is_authenticated %}
-
-<!-- =========================
+    <!-- =========================
      SIDEBAR OVERLAY
 ========================= -->
 
-<div class="sidebar-overlay"
-     id="sidebarOverlay"></div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-<!-- =========================
+    <!-- =========================
      SIDEBAR
 ========================= -->
 
-<div class="sidebar"
-     id="sidebar">
-
-    <div class="sidebar-brand">
-
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
         <h3>
-            <i class="fas fa-store"></i>
-            ShopBilling
+          <i class="fas fa-store"></i>
+          ShopBilling
         </h3>
+      </div>
 
-    </div>
-
-    <ul class="sidebar-nav">
-
+      <ul class="sidebar-nav">
         {% if current_user.role == 'admin' %}
 
-<li>
-
-    <a href="{{ url_for('dashboard.dashboard') }}"
-       class="{% if request.endpoint == 'dashboard.dashboard' %}active{% endif %}">
-
-        <i class="fas fa-chart-line"></i>
-        <span>Dashboard</span>
-
-    </a>
-
-</li>
-
-{% endif %}
-
         <li>
-
-            <a href="{{ url_for('products.products') }}"
-               class="{% if request.endpoint == 'products.products' %}active{% endif %}">
-
-                <i class="fas fa-box"></i>
-                <span>Products</span>
-
-            </a>
-
+          <a
+            href="{{ url_for('dashboard.dashboard') }}"
+            class="{% if request.endpoint == 'dashboard.dashboard' %}active{% endif %}"
+          >
+            <i class="fas fa-chart-line"></i>
+            <span>Dashboard</span>
+          </a>
         </li>
-
-        <li>
-
-            <a href="{{ url_for('customers.customers') }}"
-               class="{% if request.endpoint == 'customers.customers' %}active{% endif %}">
-
-                <i class="fas fa-users"></i>
-                <span>Customers</span>
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a href="{{ url_for('billing.billing') }}"
-               class="{% if request.endpoint == 'billing.billing' %}active{% endif %}">
-
-                <i class="fas fa-receipt"></i>
-                <span>Billing</span>
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a href="{{ url_for('invoices.invoices') }}"
-               class="{% if request.endpoint == 'invoices.invoices' %}active{% endif %}">
-
-                <i class="fas fa-file-invoice"></i>
-                <span>Invoices</span>
-
-            </a>
-
-        </li>
-
-        <li>
-
-            <a href="{{ url_for('auth.settings') }}"
-               class="{% if request.endpoint == 'auth.settings' %}active{% endif %}">
-
-                <i class="fas fa-cog"></i>
-                <span>Settings</span>
-
-            </a>
-
-        </li>
-
-    </ul>
-
-</div>
-
-<!-- =========================
-     MAIN CONTENT
-========================= -->
-
-<div class="main-content">
-
-    <!-- NAVBAR -->
-
-    <nav class="navbar">
-
-        <div class="container-fluid px-0">
-
-            <div class="d-flex align-items-center gap-3">
-
-                <!-- MOBILE MENU -->
-
-                <button class="mobile-toggle"
-                        id="mobileToggle">
-
-                    <i class="fas fa-bars"></i>
-
-                </button>
-
-                <span class="navbar-brand mb-0">
-
-                    {% block page_title %}
-                    {% endblock %}
-
-                </span>
-
-            </div>
-
-            <!-- USER MENU -->
-
-            <div class="dropdown">
-
-                <a class="btn btn-light dropdown-toggle"
-                   href="#"
-                   role="button"
-                   data-bs-toggle="dropdown">
-
-                    <i class="fas fa-user-circle"></i>
-                    {{ current_user.username }}
-
-                </a>
-
-                <ul class="dropdown-menu dropdown-menu-end">
-
-                    <li>
-
-                        <a class="dropdown-item"
-                           href="{{ url_for('auth.profile') }}">
-
-                            <i class="fas fa-user"></i>
-                            Profile
-
-                        </a>
-
-                    </li>
-
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-
-                    <li>
-
-                        <a class="dropdown-item text-danger"
-                           href="{{ url_for('auth.logout') }}">
-
-                            <i class="fas fa-sign-out-alt"></i>
-                            Logout
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </nav>
-
-    <!-- FLASH MESSAGE -->
-
-    {% with messages = get_flashed_messages(with_categories=true) %}
-
-        {% if messages %}
-
-            {% for category, message in messages %}
-
-                <div class="alert alert-{{ category }} alert-dismissible fade show">
-
-                    {{ message }}
-
-                    <button type="button"
-                            class="btn-close"
-                            data-bs-dismiss="alert"></button>
-
-                </div>
-
-            {% endfor %}
 
         {% endif %}
 
-    {% endwith %}
+        <li>
+          <a
+            href="{{ url_for('products.products') }}"
+            class="{% if request.endpoint == 'products.products' %}active{% endif %}"
+          >
+            <i class="fas fa-box"></i>
+            <span>Products</span>
+          </a>
+        </li>
 
-    <!-- PAGE CONTENT -->
+        <li>
+          <a
+            href="{{ url_for('customers.customers') }}"
+            class="{% if request.endpoint == 'customers.customers' %}active{% endif %}"
+          >
+            <i class="fas fa-users"></i>
+            <span>Customers</span>
+          </a>
+        </li>
 
-    {% block content %}
-    {% endblock %}
+        <li>
+          <a
+            href="{{ url_for('billing.billing') }}"
+            class="{% if request.endpoint == 'billing.billing' %}active{% endif %}"
+          >
+            <i class="fas fa-receipt"></i>
+            <span>Billing</span>
+          </a>
+        </li>
 
-</div>
+        <li>
+          <a
+            href="{{ url_for('invoices.invoices') }}"
+            class="{% if request.endpoint == 'invoices.invoices' %}active{% endif %}"
+          >
+            <i class="fas fa-file-invoice"></i>
+            <span>Invoices</span>
+          </a>
+        </li>
 
-{% else %}
+        <li>
+          <a
+            href="{{ url_for('auth.settings') }}"
+            class="{% if request.endpoint == 'auth.settings' %}active{% endif %}"
+          >
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    {% block auth_content %}
-    {% endblock %}
+    <!-- =========================
+     MAIN CONTENT
+========================= -->
 
-{% endif %}
+    <div class="main-content">
+      <!-- NAVBAR -->
 
-<!-- =========================
+      <nav class="navbar">
+        <div class="container-fluid px-0">
+          <div class="d-flex align-items-center gap-3">
+            <!-- MOBILE MENU -->
+
+            <button class="mobile-toggle" id="mobileToggle">
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <span class="navbar-brand mb-0">
+              {% block page_title %} {% endblock %}
+            </span>
+          </div>
+
+          <!-- USER MENU -->
+
+          <div class="dropdown">
+            <a
+              class="btn btn-light dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+            >
+              <i class="fas fa-user-circle"></i>
+              {{ current_user.username }}
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="{{ url_for('auth.profile') }}">
+                  <i class="fas fa-user"></i>
+                  Profile
+                </a>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item text-danger"
+                  href="{{ url_for('auth.logout') }}"
+                >
+                  <i class="fas fa-sign-out-alt"></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- FLASH MESSAGE -->
+
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %} {% for category, message in messages %}
+
+      <div class="alert alert-{{ category }} alert-dismissible fade show">
+        {{ message }}
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+      </div>
+
+      {% endfor %} {% endif %} {% endwith %}
+
+      <!-- PAGE CONTENT -->
+
+      {% block content %} {% endblock %}
+    </div>
+
+    {% else %} {% block auth_content %} {% endblock %} {% endif %}
+
+    <!-- =========================
      BOOTSTRAP 5 BUNDLE
 ========================= -->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- MAIN JS -->
+    <!-- MAIN JS -->
 
-<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
-<!-- MOBILE SIDEBAR -->
+    <!-- MOBILE SIDEBAR -->
 
-<script>
+    <script>
+      const sidebar = document.getElementById("sidebar");
 
-const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById("sidebarOverlay");
 
-const overlay = document.getElementById('sidebarOverlay');
+      const toggle = document.getElementById("mobileToggle");
 
-const toggle = document.getElementById('mobileToggle');
+      if (toggle) {
+        toggle.addEventListener("click", () => {
+          sidebar.classList.toggle("active");
 
-if(toggle){
+          overlay.classList.toggle("active");
+        });
+      }
 
-    toggle.addEventListener('click', () => {
+      if (overlay) {
+        overlay.addEventListener("click", () => {
+          sidebar.classList.remove("active");
 
-        sidebar.classList.toggle('active');
+          overlay.classList.remove("active");
+        });
+      }
+    </script>
 
-        overlay.classList.toggle('active');
-
-    });
-
-}
-
-if(overlay){
-
-    overlay.addEventListener('click', () => {
-
-        sidebar.classList.remove('active');
-
-        overlay.classList.remove('active');
-
-    });
-
-}
-
-</script>
-
-{% block scripts %}
-{% endblock %}
-
-</body>
-
+    {% block scripts %} {% endblock %}
+  </body>
 </html>
