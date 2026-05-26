@@ -1,9 +1,10 @@
 # Python cache files
 __pycache__/
 *.py[cod]
+*$py.class
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# C extensions
+*.so
 
 # Virtual environments
 venv/
@@ -13,14 +14,32 @@ ENV/
 
 # Environment variables
 .env
+.envrc
 
-# Flask instance/cache
+# Flask files
 instance/
 .webassets-cache
 
 # Database files
 *.db
 *.sqlite3
+
+# Build files
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Python testing/cache
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
 
 # VS Code settings
 .vscode/
@@ -32,18 +51,16 @@ instance/
 # History files
 .history/
 
-# Build files
-build/
-dist/
-*.egg-info/
-
-# Python testing/cache
-.pytest_cache/
-.coverage
-htmlcov/
-
 # Log files
 *.log
+
+# Temporary files
+*.tmp
+*.temp
+tempCodeRunnerFile.py
+
+# Upload folders
+uploads/
 
 # OS generated files
 .DS_Store
@@ -54,10 +71,15 @@ Desktop.ini
 .AppleDouble
 .LSOverride
 
-# Temporary files
-*.tmp
-*.temp
-tempCodeRunnerFile.py
+# Type checker cache
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
 
-# Uploads
-uploads/
+# Distribution files
+MANIFEST
+*.egg
+
+# Streamlit secrets
+.streamlit/secrets.toml
