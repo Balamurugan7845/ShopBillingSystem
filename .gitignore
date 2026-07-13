@@ -1,7 +1,9 @@
 # Python cache files
-__pycache__/
+**pycache**/
 *.py[cod]
 *$py.class
+.Python
+.python-version
 
 # C extensions
 *.so
@@ -14,37 +16,66 @@ ENV/
 
 # Environment variables
 .env
+.env.*
+!.env.example
 .envrc
 
 # Flask files
 instance/
 .webassets-cache
+.flaskenv
 
 # Database files
 *.db
+*.sqlite
 *.sqlite3
+*.db-journal
+
+# MySQL dumps
+*.sql.bak
+
 
 # Build files
 build/
 dist/
-*.egg-info/
+downloads/
+develop-eggs/
 .eggs/
+lib/
+lib64/
+parts/
+sdist/
+share/python-wheels/
+pip-wheel-metadata/
 
-# Python testing/cache
+*.egg-info/
+*.egg
+MANIFEST
+
+
+# Python testing / coverage
 .pytest_cache/
 .coverage
+.coverage.*
+coverage.xml
 htmlcov/
 .tox/
 .nox/
 .cache/
 
+# Type checker cache
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
 # Jupyter Notebook
 .ipynb_checkpoints/
 
-# VS Code settings
+# VS Code
 .vscode/
 
-# PyCharm settings
+# PyCharm
 .idea/
 *.iml
 
@@ -53,33 +84,52 @@ htmlcov/
 
 # Log files
 *.log
+logs/
 
 # Temporary files
 *.tmp
 *.temp
+*.bak
+*.swp
+*.swo
+*~
 tempCodeRunnerFile.py
 
 # Upload folders
-uploads/
+
+# Uncomment if uploads should NOT be tracked
+
+
+# uploads/
+
+# static/uploads/
+
+# Exported reports
+
+
+reports/
+exports/
+
+# Streamlit
+.streamlit/secrets.toml
 
 # OS generated files
 .DS_Store
 Thumbs.db
 Desktop.ini
 
-# MacOS files
+# macOS
 .AppleDouble
 .LSOverride
 
-# Type checker cache
-.mypy_cache/
-.pyre/
-.pytype/
-.ruff_cache/
+# PyInstaller
+*.manifest
+*.spec
 
-# Distribution files
-MANIFEST
-*.egg
+# Security
+secrets.json
+credentials.json
+service_account.json
 
-# Streamlit secrets
-.streamlit/secrets.toml
+# Keep placeholder files
+!.gitkeep
